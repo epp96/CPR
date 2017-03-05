@@ -26,8 +26,9 @@ public class infobasica extends AppCompatActivity implements View.OnClickListene
     public void onClick(View view) {
         int id = view.getId();
         if (id == back.getId()) {
-            Intent intent = new Intent(this, MainActivity.class);
-            startActivity(intent);
+            /*Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);*/
+            finish();
         }
         else if (id == menu.getId()) {
             Intent intent = new Intent(this, MainActivity.class);

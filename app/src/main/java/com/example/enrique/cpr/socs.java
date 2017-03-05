@@ -34,8 +34,9 @@ public class socs extends AppCompatActivity implements View.OnClickListener {
     public void onClick(View view) {
         int id = view.getId();
         if (id == back.getId()) {
-            Intent intent = new Intent(this, emergencia.class);
-            startActivity(intent);
+            /*Intent intent = new Intent(this, emergencia.class);
+            startActivity(intent);*/
+            finish();
         }
         else if (id == menu.getId()) {
             Intent intent = new Intent(this, MainActivity.class);
