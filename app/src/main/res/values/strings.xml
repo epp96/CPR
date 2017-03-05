@@ -10,7 +10,7 @@
     <string name="nocons">NO Consciente</string>
     <string name="golped">Golpe De Calor</string>
     <string name="fuego">Quemaduras</string>
-    <string name="atragar">Atragamiento</string>
+    <string name="atragar">Atragantamiento</string>
     <string name="hemo">Hemorragia</string>
     <string name="herida">Herida</string>
     <string name="veneno">Envenenamiento</string>
@@ -23,5 +23,5 @@
     <string name="coma">Coma</string>
     <string name="trauma">traumatismo</string>
     <string name="botiquin">Botiquin</string>
-    <string name="vitales">Constatentes Vitales</string>
+    <string name="vitales">Constantes Vitales</string>
 </resources>
