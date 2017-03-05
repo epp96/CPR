@@ -1,6 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.enrique.cpr.emergencia">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1">
 
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/back"
+                android:text="back"/>
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/menu"
+                android:text="@string/menu"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="12"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:id="@+id/proteger"
+                android:text="@string/proteg"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:id="@+id/alert"
+                android:text="@string/alertar"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:id="@+id/soco"
+                android:text="@string/soco"/>
+
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>

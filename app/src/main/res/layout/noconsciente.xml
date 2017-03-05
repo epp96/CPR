@@ -1,6 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.enrique.cpr.noconsciente">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="back" />
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></LinearLayout>
+
+            <Button
+                android:id="@+id/menu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/menu" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="12"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:text="A"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:text="B"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:text="C"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:text="@string/paradaC"
+                android:id="@+id/parada"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:text="@string/atragar"
+                android:id="@+id/atragar"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:text="@string/covulsion"
+                android:id="@+id/covulsion"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:text="@string/desmayo"
+                android:id="@+id/desmayo"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:text="@string/coma"
+                android:id="@+id/coma"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:text="@string/trauma"
+                android:id="@+id/trauma"/>
+
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>

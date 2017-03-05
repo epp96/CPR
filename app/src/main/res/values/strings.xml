@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">CPR</string>
+    <string name="menu">Menu</string>
+    <string name="emerg">Emergencia</string>
+    <string name="infoB">Informacion Basica</string>
+    <string name="proteg">Proteger</string>
+    <string name="alertar">Alertar</string>
+    <string name="soco">Socorrer</string>
+    <string name="cons">Consciente</string>
+    <string name="nocons">NO Consciente</string>
+    <string name="golped">Golpe De Calor</string>
+    <string name="fuego">Quemaduras</string>
+    <string name="atragar">Atragamiento</string>
+    <string name="hemo">Hemorragia</string>
+    <string name="herida">Herida</string>
+    <string name="veneno">Envenenamiento</string>
+    <string name="fractura">Fractura</string>
+    <string name="rayo">Electrocucion</string>
+    <string name="golpes">golpes</string>
+    <string name="paradaC">Parada Cardiaca</string>
+    <string name="covulsion">Convulsion</string>
+    <string name="desmayo">Desmayo</string>
+    <string name="coma">Coma</string>
+    <string name="trauma">traumatismo</string>
+    <string name="botiquin">Botiquin</string>
+    <string name="vitales">Constatentes Vitales</string>
 </resources>
