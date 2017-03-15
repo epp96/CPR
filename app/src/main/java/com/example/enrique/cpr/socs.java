@@ -41,6 +41,7 @@ public class socs extends AppCompatActivity implements View.OnClickListener {
         else if (id == menu.getId()) {
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
+            finish();
 
         }
         else if (id == consciente.getId()) {

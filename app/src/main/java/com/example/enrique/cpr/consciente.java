@@ -59,6 +59,7 @@ public class consciente extends AppCompatActivity implements View.OnClickListene
         else if (id == menu.getId()) {
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
+            finish();
         }
         else if (id == calor.getId()) {
             //obtener informacion

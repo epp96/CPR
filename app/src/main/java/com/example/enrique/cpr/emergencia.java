@@ -46,6 +46,7 @@ public class emergencia extends AppCompatActivity  implements View.OnClickListen
         else if (id == menu.getId()) {
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
+            finish();
 
         }
         else if (id == proteger.getId()) {

@@ -33,6 +33,7 @@ public class infobasica extends AppCompatActivity implements View.OnClickListene
         else if (id == menu.getId()) {
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
+            finish();
         }
 
     }
