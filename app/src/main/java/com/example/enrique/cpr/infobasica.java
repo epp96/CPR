@@ -12,6 +12,7 @@ import android.widget.Button;
 public class infobasica extends AppCompatActivity implements View.OnClickListener{
     Button back;
     Button menu;
+    Button botiquin;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +21,8 @@ public class infobasica extends AppCompatActivity implements View.OnClickListene
         menu = (Button) findViewById(R.id.menu);
         back.setOnClickListener(this);
         menu.setOnClickListener(this);
+        botiquin = (Button) findViewById(R.id.botiquin);
+        botiquin.setOnClickListener(this);
     }
 
     @Override
@@ -32,6 +35,11 @@ public class infobasica extends AppCompatActivity implements View.OnClickListene
         }
         else if (id == menu.getId()) {
             Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
+            finish();
+        }
+        else if (id == botiquin.getId()) {
+            Intent intent = new Intent(this, botiquin.class);
             startActivity(intent);
             finish();
         }

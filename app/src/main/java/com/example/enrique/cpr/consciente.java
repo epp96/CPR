@@ -63,27 +63,41 @@ public class consciente extends AppCompatActivity implements View.OnClickListene
         }
         else if (id == calor.getId()) {
             //obtener informacion
+            Intent intent = new Intent(this, golpedecalor.class);
+            startActivity(intent);
         }
         else if (id == quemaduras.getId()) {
             //obtener informacion
+            Intent intent = new Intent(this, quemaduras.class);
+            startActivity(intent);
         }
         else if (id == atragamiento.getId()) {
             //obtener informacion
         }
         else  if (id == hemorragia.getId()) {
             //obtener informacion
+            Intent intent = new Intent(this, hemorragias.class);
+            startActivity(intent);
         }
         else  if (id == herida.getId()) {
             //obtener informacion
+            Intent intent = new Intent(this, heridas.class);
+            startActivity(intent);
         }
         else if (id == envenenamiento.getId()) {
             //obtener informacion
+            Intent intent = new Intent(this, envenenamiento.class);
+            startActivity(intent);
         }
         else if (id == fractura.getId()) {
             //obtener informacion
+            Intent intent = new Intent(this, fracturas.class);
+            startActivity(intent);
         }
         else if (id == golpes.getId()) {
             //obtener informacion
+            Intent intent = new Intent(this, golpes.class);
+            startActivity(intent);
         }
 
     }

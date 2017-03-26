@@ -13,6 +13,7 @@ import android.widget.Button;
 public class noconsciente extends AppCompatActivity implements View.OnClickListener{
     Button back;
     Button menu;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +22,7 @@ public class noconsciente extends AppCompatActivity implements View.OnClickListe
         menu = (Button) findViewById(R.id.menu);
         back.setOnClickListener(this);
         menu.setOnClickListener(this);
+
 
     }
 
@@ -37,6 +39,7 @@ public class noconsciente extends AppCompatActivity implements View.OnClickListe
             startActivity(intent);
             finish();
         }
+
 
     }
 }

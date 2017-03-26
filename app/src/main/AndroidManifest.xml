@@ -35,6 +35,39 @@
             android:name=".socs"
             android:label="@string/soco"
             ></activity>
+        <activity
+            android:name=".heridas"
+            android:label="@string/herida"
+            ></activity>
+        <activity
+            android:name=".botiquin"
+            android:label="@string/botiquin"
+            ></activity>
+        <activity
+            android:name=".fracturas"
+            android:label="@string/fractura"
+            ></activity>
+        <activity
+            android:name=".hemorragias"
+            android:label="@string/hemo"
+            ></activity>
+        <activity
+            android:name=".envenenamiento"
+            android:label="@string/veneno"
+            ></activity>
+        <activity
+            android:name=".golpes"
+            android:label="@string/golpes"
+            ></activity>
+        <activity
+            android:name=".golpedecalor"
+            android:label="@string/golped"
+            ></activity>
+        <activity
+            android:name=".quemaduras"
+            android:label="@string/fuego"
+            ></activity>
+
     </application>
 
 </manifest>
