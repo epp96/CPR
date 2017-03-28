@@ -13,6 +13,7 @@ public class golpedecalor extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.info);
         WebView webview = (WebView) findViewById(R.id.webview_xml);
+        webview.getSettings().setJavaScriptEnabled(true);
         webview.loadUrl("file:///android_asset/golpedecalor.html");
     }
 }

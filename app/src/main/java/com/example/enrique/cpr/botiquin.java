@@ -8,9 +8,6 @@ import android.text.Html;
 import android.webkit.WebView;
 import android.widget.TextView;
 
-/**
- * Created by Enrique on 3/25/2017.
- */
 
 public class botiquin extends AppCompatActivity {
 
@@ -19,6 +16,7 @@ public class botiquin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.info);
         WebView webview = (WebView) findViewById(R.id.webview_xml);
+        webview.getSettings().setJavaScriptEnabled(true);
         webview.loadUrl("file:///android_asset/botiquin.html");
     }
  }
