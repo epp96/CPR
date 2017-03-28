@@ -15,7 +15,7 @@ public class envenenamiento extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.test);
+        setContentView(R.layout.info);
         WebView webview = (WebView) findViewById(R.id.webview_xml);
         webview.loadUrl("file:///android_asset/envenenamiento.html");
     }
