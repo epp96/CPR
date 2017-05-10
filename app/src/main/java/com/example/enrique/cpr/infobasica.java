@@ -41,7 +41,6 @@ public class infobasica extends AppCompatActivity implements View.OnClickListene
         else if (id == botiquin.getId()) {
             Intent intent = new Intent(this, botiquin.class);
             startActivity(intent);
-            finish();
         }
 
     }
