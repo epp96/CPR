@@ -1,12 +1,9 @@
 package com.example.enrique.cpr;
 
-import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.text.Html;
 import android.webkit.WebView;
-import android.widget.TextView;
 
 
 public class botiquin extends AppCompatActivity {
@@ -19,4 +16,6 @@ public class botiquin extends AppCompatActivity {
         webview.getSettings().setJavaScriptEnabled(true);
         webview.loadUrl("file:///android_asset/botiquin.html");
     }
+
+
  }

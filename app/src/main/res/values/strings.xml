@@ -1,70 +1,29 @@
 <resources>
     <string name="app_name">CPR</string>
-    <string name="menu">Menu</string>
+    <string name="menu">Menú</string>
     <string name="emerg">Emergencia</string>
-    <string name="infoB">Informacion Basica</string>
+    <string name="infoB">Información Basica</string>
     <string name="proteg">Proteger</string>
     <string name="alertar">Alertar</string>
     <string name="soco">Socorrer</string>
     <string name="cons">Consciente</string>
-    <string name="nocons">NO Consciente</string>
-    <string name="golped">Golpe De Calor</string>
+    <string name="nocons">No consciente</string>
+    <string name="golped">Golpe de calor</string>
     <string name="fuego">Quemaduras</string>
     <string name="atragar">Atragantamiento</string>
     <string name="hemo">Hemorragia</string>
     <string name="herida">Herida</string>
     <string name="veneno">Envenenamiento</string>
     <string name="fractura">Fractura</string>
-    <string name="rayo">Electrocucion</string>
-    <string name="golpes">golpes</string>
+    <string name="rayo">Electrocución</string>
+    <string name="golpes">Golpes</string>
     <string name="paradaC">Parada Cardiaca</string>
-    <string name="covulsion">Convulsion</string>
+    <string name="covulsion">Convulsión</string>
     <string name="desmayo">Desmayo</string>
     <string name="coma">Coma</string>
-    <string name="trauma">traumatismo</string>
-    <string name="botiquin">Botiquin</string>
+    <string name="trauma">Traumatismo</string>
+    <string name="botiquin">Botiquín</string>
     <string name="vitales">Constantes Vitales</string>
-
-    <string name="botiquin_contenido_html">
-        <![CDATA[
-            <html>
-                <h1>Material de curas e instrumental:</h1></br>
-
-                <h2>Guantes desechables</h2>
-                <ul>
-                    <li>Pinzas</li>
-                    <li>Termómetro</li>
-                    <li>Gasas estériles</li>
-                    <li>Tijeras punta roma</li>
-                    <li>Esparadrapo</li>
-                    <li>Tiritas</li>
-                    <li>Vendas de gasa y elásticas</li>
-                </ul>
-
-                <h2>Antisépticos y desinfectantes</h2>
-                <ul>
-                    <li>Betadine (povidona yodada)</li>
-                    <li>Cristalmina (Clorhexidina)</li>
-                    <li>Suero fisiológico</li>
-                    <li>Agua oxigenada.</li>
-                </ul>
-
-                <h2>Medicamentos</h2>
-                <ul>
-                    <li>Analgésicos y antitérmicos</li>
-                    <li>Pomada antiinflamatoria)</li>
-                    <li>Pomada para quemaduras</li>
-                    <li>Pomada antihistamínica para picaduras</li>
-                </ul>
-
-                <h2>Otros</h2>
-                <ul>
-                    <li>Bolsitas de frío instantáneo</li>
-                </ul>
-
-            </html>
-        ]]>
-    </string>
 
 
 
