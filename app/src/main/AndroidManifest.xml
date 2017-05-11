@@ -18,69 +18,82 @@
         <activity
             android:name=".emergencia"
             android:label="@string/emerg"
-            android:parentActivityName=".MainActivity"
-            ></activity>
+            android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".consciente"
+            android:name=".consciente.consciente"
             android:label="@string/cons"
-            android:parentActivityName=".socs"
-            ></activity>
+            android:parentActivityName=".socs" />
         <activity
             android:name=".infobasica"
             android:label="@string/infoB"
-            android:parentActivityName=".MainActivity"
-            ></activity>
+            android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".noconsciente"
+            android:name=".no_consciente.noconsciente"
             android:label="@string/nocons"
-            android:parentActivityName=".socs"
-            ></activity>
+            android:parentActivityName=".socs" />
         <activity
             android:name=".socs"
             android:label="@string/soco"
-            android:parentActivityName=".emergencia"
-            ></activity>
+            android:parentActivityName=".emergencia" />
         <activity
-            android:name=".heridas"
+            android:name=".consciente.heridas"
             android:label="@string/herida"
-            android:parentActivityName=".consciente"
-            ></activity>
+            android:parentActivityName=".consciente.consciente" />
         <activity
             android:name=".botiquin"
             android:label="@string/botiquin"
-            android:parentActivityName=".infobasica"
-            ></activity>
+            android:parentActivityName=".infobasica" />
         <activity
-            android:name=".fracturas"
+            android:name=".consciente.fracturas"
             android:label="@string/fractura"
-            android:parentActivityName=".consciente"
-            ></activity>
+            android:parentActivityName=".consciente.consciente" />
         <activity
-            android:name=".hemorragias"
+            android:name=".consciente.hemorragias"
             android:label="@string/hemo"
-            android:parentActivityName=".consciente"
-            ></activity>
+            android:parentActivityName=".consciente.consciente" />
         <activity
-            android:name=".envenenamiento"
+            android:name=".consciente.envenenamiento"
             android:label="@string/veneno"
-            android:parentActivityName=".consciente"
-            ></activity>
+            android:parentActivityName=".consciente.consciente" />
         <activity
-            android:name=".golpes"
+            android:name=".consciente.golpes"
             android:label="@string/golpes"
-            android:parentActivityName=".consciente"
-            ></activity>
+            android:parentActivityName=".consciente.consciente" />
         <activity
-            android:name=".golpedecalor"
+            android:name=".consciente.golpedecalor"
             android:label="@string/golped"
-            android:parentActivityName=".consciente"
-            ></activity>
+            android:parentActivityName=".consciente.consciente" />
         <activity
-            android:name=".quemaduras"
+            android:name=".consciente.quemaduras"
             android:label="@string/fuego"
-            android:parentActivityName=".consciente"
-            ></activity>
-
+            android:parentActivityName=".consciente.consciente" />
+        <activity
+            android:name=".no_consciente.traumatismo"
+            android:parentActivityName=".no_consciente.noconsciente" />
+        <activity
+            android:name=".no_consciente.coma"
+            android:parentActivityName=".no_consciente.noconsciente" />
+        <activity
+            android:name=".no_consciente.desmayo"
+            android:parentActivityName=".no_consciente.noconsciente" />
+        <activity
+            android:name=".no_consciente.convulsion"
+            android:parentActivityName=".no_consciente.noconsciente" />
+        <activity
+            android:name=".no_consciente.atragantamiento"
+            android:parentActivityName=".no_consciente.noconsciente" />
+        <activity
+            android:name=".no_consciente.paradaCardiaca"
+            android:parentActivityName=".no_consciente.noconsciente" />
+        <activity
+            android:name=".no_consciente.c"
+            android:parentActivityName=".no_consciente.noconsciente" />
+        <activity
+            android:name=".no_consciente.b"
+            android:parentActivityName=".no_consciente.noconsciente" />
+        <activity
+            android:name=".no_consciente.a"
+            android:parentActivityName=".no_consciente.noconsciente" />
     </application>
 
 </manifest>

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.enrique.cpr.noconsciente">
+    tools:context="com.example.enrique.cpr.no_consciente.noconsciente">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -24,7 +24,7 @@
             <LinearLayout
                 android:layout_width="0px"
                 android:layout_height="match_parent"
-                android:layout_weight="1"></LinearLayout>
+                android:layout_weight="1"/>
 
             <Button
                 android:id="@+id/menu"
@@ -41,17 +41,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="0px"
                 android:layout_weight="1"
-                android:text="A"/>
+                android:text="A"
+                android:id="@+id/a"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="0px"
                 android:layout_weight="1"
-                android:text="B"/>
+                android:text="B"
+                android:id="@+id/b"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="0px"
                 android:layout_weight="1"
-                android:text="C"/>
+                android:text="C"
+                android:id="@+id/c"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="0px"

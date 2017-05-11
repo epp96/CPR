@@ -6,6 +6,9 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+
+import com.example.enrique.cpr.no_consciente.noconsciente;
+
 /**
  * Created by Enrique on 3/5/2017.
  */
@@ -15,6 +18,7 @@ public class socs extends AppCompatActivity implements View.OnClickListener {
     Button menu;
     Button consciente;
     Button nocons;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,7 +31,6 @@ public class socs extends AppCompatActivity implements View.OnClickListener {
         menu.setOnClickListener(this);
         consciente.setOnClickListener(this);
         nocons.setOnClickListener(this);
-
     }
 
     @Override
@@ -45,7 +48,7 @@ public class socs extends AppCompatActivity implements View.OnClickListener {
 
         }
         else if (id == consciente.getId()) {
-            Intent intent = new Intent(this, consciente.class);
+            Intent intent = new Intent(this, com.example.enrique.cpr.consciente.consciente.class);
             startActivity(intent);
 
         }
