@@ -67,47 +67,47 @@ public class noconsciente extends AppCompatActivity implements View.OnClickListe
             finish();
         }
         else if (id == a.getId()) {
-            Intent intent = new Intent(this, com.example.enrique.cpr.no_consciente.a.class);
+            Intent intent = new Intent(this, a.class);
             startActivity(intent);
         }
         else if (id == b.getId()) {
             //obtener informacion
-            Intent intent = new Intent(this, com.example.enrique.cpr.no_consciente.b.class);
+            Intent intent = new Intent(this, b.class);
             startActivity(intent);
         }
         else if (id == c.getId()) {
             //obtener informacion
-            Intent intent = new Intent(this, com.example.enrique.cpr.no_consciente.c.class);
+            Intent intent = new Intent(this, c.class);
             startActivity(intent);
         }
         else if (id == paradaCardiaca.getId()) {
             //obtener informacion
-            Intent intent = new Intent(this, com.example.enrique.cpr.no_consciente.paradaCardiaca.class);
+            Intent intent = new Intent(this, paradaCardiaca.class);
             startActivity(intent);
         }
         else  if (id == atragamiento.getId()) {
             //obtener informacion
-            Intent intent = new Intent(this, com.example.enrique.cpr.no_consciente.atragantamiento.class);
+            Intent intent = new Intent(this, atragantamiento.class);
             startActivity(intent);
         }
         else  if (id == convulsion.getId()) {
             //obtener informacion
-            Intent intent = new Intent(this, com.example.enrique.cpr.no_consciente.convulsion.class);
+            Intent intent = new Intent(this, convulsion.class);
             startActivity(intent);
         }
         else if (id == desmayo.getId()) {
             //obtener informacion
-            Intent intent = new Intent(this, com.example.enrique.cpr.no_consciente.desmayo.class);
+            Intent intent = new Intent(this, desmayo.class);
             startActivity(intent);
         }
         else if (id == coma.getId()) {
             //obtener informacion
-            Intent intent = new Intent(this, com.example.enrique.cpr.no_consciente.coma.class);
+            Intent intent = new Intent(this, coma.class);
             startActivity(intent);
         }
         else if (id == traumatismo.getId()) {
             //obtener informacion
-            Intent intent = new Intent(this, com.example.enrique.cpr.no_consciente.traumatismo.class);
+            Intent intent = new Intent(this, traumatismo.class);
             startActivity(intent);
         }
     }

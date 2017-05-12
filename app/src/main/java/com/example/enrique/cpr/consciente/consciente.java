@@ -77,6 +77,8 @@ public class consciente extends AppCompatActivity implements View.OnClickListene
         }
         else if (id == atragamiento.getId()) {
             //obtener informacion
+            Intent intent = new Intent(this, atragantamiento.class);
+            startActivity(intent);
         }
         else  if (id == hemorragia.getId()) {
             //obtener informacion

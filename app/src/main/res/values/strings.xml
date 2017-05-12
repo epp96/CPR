@@ -18,12 +18,13 @@
     <string name="rayo">Electrocución</string>
     <string name="golpes">Golpes</string>
     <string name="paradaC">Parada Cardiaca</string>
-    <string name="covulsion">Convulsión</string>
+    <string name="convulsion">Convulsión</string>
     <string name="desmayo">Desmayo</string>
     <string name="coma">Coma</string>
     <string name="trauma">Traumatismo</string>
     <string name="botiquin">Botiquín</string>
     <string name="vitales">Constantes Vitales</string>
-
-
+    <string name="a">Vía aérea despejada</string>
+    <string name="b">Buena ventilación</string>
+    <string name="c">Circulación y Control de hemorragias</string>
 </resources>
