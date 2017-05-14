@@ -18,14 +18,20 @@
             android:layout_width="match_parent"
             android:layout_height="0px"
             android:layout_weight="1"
-            android:text="@string/emerg" />
+            android:text="@string/emerg"
+            android:textSize="50dp"
+            android:background="@drawable/custom_button"
+            android:textAllCaps="false"/>
 
         <Button
             android:id="@+id/infoB"
             android:layout_width="match_parent"
             android:layout_height="0px"
             android:layout_weight="1"
-            android:text="@string/infoB" />
+            android:text="@string/infoB"
+            android:background="@drawable/custom_button"
+            android:textSize="50dp"
+            android:textAllCaps="false"/>
 
     </LinearLayout>
 </RelativeLayout>
