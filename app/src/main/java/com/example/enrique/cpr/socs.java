@@ -18,8 +18,6 @@ import com.example.enrique.cpr.no_consciente.noconsciente;
  */
 
 public class socs extends AppCompatActivity implements View.OnClickListener {
-    Button back;
-    Button menu;
     Button consciente;
     Button nocons;
 
@@ -27,12 +25,8 @@ public class socs extends AppCompatActivity implements View.OnClickListener {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.soco);
-        back = (Button) findViewById(R.id.back);
-        menu = (Button) findViewById(R.id.menu);
         consciente = (Button) findViewById(R.id.cons);
         nocons = (Button) findViewById(R.id.nocons);
-        back.setOnClickListener(this);
-        menu.setOnClickListener(this);
         consciente.setOnClickListener(this);
         nocons.setOnClickListener(this);
     }
@@ -49,6 +43,10 @@ public class socs extends AppCompatActivity implements View.OnClickListener {
         switch (item.getItemId()) {
             case R.id.home:
                 Toast.makeText(this, "Menu Item 1 selected", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+                finish();
                 break;
         }
         return super.onOptionsItemSelected(item);
@@ -57,21 +55,13 @@ public class socs extends AppCompatActivity implements View.OnClickListener {
     @Override
     public void onClick(View view) {
         int id = view.getId();
-        if (id == back.getId()) {
-            /*Intent intent = new Intent(this, emergencia.class);
-            startActivity(intent);*/
-            finish();
-        } else if (id == menu.getId()) {
-            Intent intent = new Intent(this, MainActivity.class);
-            startActivity(intent);
-            finish();
-
-        } else if (id == consciente.getId()) {
+        if (id == consciente.getId()) {
             Intent intent = new Intent(this, com.example.enrique.cpr.consciente.consciente.class);
             startActivity(intent);
 
         } else if (id == nocons.getId()) {
             Intent intent = new Intent(this, noconsciente.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
         }
 

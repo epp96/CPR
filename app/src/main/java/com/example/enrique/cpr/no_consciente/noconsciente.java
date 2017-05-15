@@ -3,6 +3,7 @@ package com.example.enrique.cpr.no_consciente;
 /**
  * Created by Enrique on 3/5/2017.
  */
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -17,9 +18,7 @@ import android.widget.Toast;
 import com.example.enrique.cpr.MainActivity;
 import com.example.enrique.cpr.R;
 
-public class noconsciente extends AppCompatActivity implements View.OnClickListener{
-    Button back;
-    Button menu;
+public class noconsciente extends AppCompatActivity implements View.OnClickListener {
     Button a;
     Button b;
     Button c;
@@ -34,8 +33,6 @@ public class noconsciente extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.noconsciente);
-        back = (Button) findViewById(R.id.back);
-        menu = (Button) findViewById(R.id.menu);
         a = (Button) findViewById(R.id.a);
         b = (Button) findViewById(R.id.b);
         c = (Button) findViewById(R.id.c);
@@ -45,8 +42,6 @@ public class noconsciente extends AppCompatActivity implements View.OnClickListe
         desmayo = (Button) findViewById(R.id.desmayo);
         coma = (Button) findViewById(R.id.coma);
         traumatismo = (Button) findViewById(R.id.trauma);
-        back.setOnClickListener(this);
-        menu.setOnClickListener(this);
         a.setOnClickListener(this);
         b.setOnClickListener(this);
         c.setOnClickListener(this);
@@ -57,6 +52,7 @@ public class noconsciente extends AppCompatActivity implements View.OnClickListe
         coma.setOnClickListener(this);
         traumatismo.setOnClickListener(this);
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -69,62 +65,61 @@ public class noconsciente extends AppCompatActivity implements View.OnClickListe
         switch (item.getItemId()) {
             case R.id.home:
                 Toast.makeText(this, "Menu Item 1 selected", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(this, MainActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+                finish();
                 break;
         }
         return super.onOptionsItemSelected(item);
     }
+
     @Override
     public void onClick(View view) {
         int id = view.getId();
-        if (id == back.getId()){
-            finish();
-        }if (id == menu.getId()){
-            Intent intent = new Intent(this, MainActivity.class);
-            startActivity(intent);
-            finish();
-        }
-        else if (id == a.getId()) {
+        if (id == a.getId()) {
             Intent intent = new Intent(this, a.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
-        }
-        else if (id == b.getId()) {
+        } else if (id == b.getId()) {
             //obtener informacion
             Intent intent = new Intent(this, b.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
-        }
-        else if (id == c.getId()) {
+        } else if (id == c.getId()) {
             //obtener informacion
             Intent intent = new Intent(this, c.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
-        }
-        else if (id == paradaCardiaca.getId()) {
+        } else if (id == paradaCardiaca.getId()) {
             //obtener informacion
             Intent intent = new Intent(this, paradaCardiaca.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
-        }
-        else  if (id == atragamiento.getId()) {
+        } else if (id == atragamiento.getId()) {
             //obtener informacion
             Intent intent = new Intent(this, atragantamiento.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
-        }
-        else  if (id == convulsion.getId()) {
+        } else if (id == convulsion.getId()) {
             //obtener informacion
             Intent intent = new Intent(this, convulsion.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
-        }
-        else if (id == desmayo.getId()) {
+        } else if (id == desmayo.getId()) {
             //obtener informacion
             Intent intent = new Intent(this, desmayo.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
-        }
-        else if (id == coma.getId()) {
+        } else if (id == coma.getId()) {
             //obtener informacion
             Intent intent = new Intent(this, coma.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
-        }
-        else if (id == traumatismo.getId()) {
+        } else if (id == traumatismo.getId()) {
             //obtener informacion
             Intent intent = new Intent(this, traumatismo.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
         }
     }

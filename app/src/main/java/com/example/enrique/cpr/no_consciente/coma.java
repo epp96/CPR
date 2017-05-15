@@ -1,5 +1,6 @@
 package com.example.enrique.cpr.no_consciente;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -8,6 +9,7 @@ import android.view.MenuItem;
 import android.webkit.WebView;
 import android.widget.Toast;
 
+import com.example.enrique.cpr.MainActivity;
 import com.example.enrique.cpr.R;
 
 public class coma extends AppCompatActivity {
@@ -32,6 +34,10 @@ public class coma extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.home:
                 Toast.makeText(this, "Menu Item 1 selected", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+                finish();
                 break;
         }
         return super.onOptionsItemSelected(item);

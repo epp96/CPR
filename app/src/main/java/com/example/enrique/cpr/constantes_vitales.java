@@ -1,5 +1,6 @@
 package com.example.enrique.cpr;
 
+import android.content.Intent;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -30,6 +31,10 @@ public class constantes_vitales extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.home:
                 Toast.makeText(this, "Menu Item 1 selected", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+                finish();
                 break;
         }
         return super.onOptionsItemSelected(item);    }

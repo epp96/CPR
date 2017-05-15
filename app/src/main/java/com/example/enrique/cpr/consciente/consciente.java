@@ -19,8 +19,6 @@ import com.example.enrique.cpr.R;
  */
 
 public class consciente extends AppCompatActivity implements View.OnClickListener{
-    Button back;
-    Button menu;
     Button calor;
     Button quemaduras;
     Button atragamiento;
@@ -34,8 +32,6 @@ public class consciente extends AppCompatActivity implements View.OnClickListene
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.consciente);
-        back = (Button) findViewById(R.id.back);
-        menu = (Button) findViewById(R.id.menu);
         calor = (Button) findViewById(R.id.golpecalor);
         quemaduras = (Button) findViewById(R.id.fuego);
         atragamiento = (Button) findViewById(R.id.atraga);
@@ -44,8 +40,6 @@ public class consciente extends AppCompatActivity implements View.OnClickListene
         envenenamiento = (Button) findViewById(R.id.veneno);
         fractura = (Button) findViewById(R.id.fractura);
         golpes = (Button) findViewById(R.id.golpes);
-        back.setOnClickListener(this);
-        menu.setOnClickListener(this);
         calor.setOnClickListener(this);
         quemaduras.setOnClickListener(this);
         atragamiento.setOnClickListener(this);
@@ -66,23 +60,17 @@ public class consciente extends AppCompatActivity implements View.OnClickListene
         switch (item.getItemId()) {
             case R.id.home:
                 Toast.makeText(this, "Menu Item 1 selected", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+                finish();
                 break;
         }
         return super.onOptionsItemSelected(item);    }
     @Override
     public void onClick(View view) {
         int id = view.getId();
-        if (id == back.getId()){
-           /* Intent intent = new Intent(this, socs.class);
-            startActivity(intent);*/
-            finish();
-        }
-        else if (id == menu.getId()) {
-            Intent intent = new Intent(this, MainActivity.class);
-            startActivity(intent);
-            finish();
-        }
-        else if (id == calor.getId()) {
+        if (id == calor.getId()) {
             //obtener informacion
             Intent intent = new Intent(this, golpedecalor.class);
             startActivity(intent);

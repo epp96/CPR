@@ -20,8 +20,6 @@ import com.example.enrique.cpr.socs;
  */
 
 public class emergencia extends AppCompatActivity  implements View.OnClickListener  {
-    Button back;
-    Button menu;
     Button proteger;
     Button alertar;
     Button socorrer;
@@ -31,13 +29,9 @@ public class emergencia extends AppCompatActivity  implements View.OnClickListen
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.emergencia);
-        back = (Button) findViewById(R.id.back);
-        menu = (Button) findViewById(R.id.menu);
         proteger = (Button) findViewById(R.id.proteger);
         alertar = (Button) findViewById(R.id.alert);
         socorrer = (Button) findViewById(R.id.soco);
-        back.setOnClickListener(this);
-        menu.setOnClickListener(this);
         proteger.setOnClickListener(this);
         alertar.setOnClickListener(this);
         socorrer.setOnClickListener(this);
@@ -54,24 +48,17 @@ public class emergencia extends AppCompatActivity  implements View.OnClickListen
         switch (item.getItemId()) {
             case R.id.home:
                 Toast.makeText(this, "Menu Item 1 selected", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+                finish();
                 break;
         }
         return super.onOptionsItemSelected(item);    }
     @Override
     public void onClick(View view) {
         int id = view.getId();
-        if (id == back.getId()) {
-            /*Intent intent = new Intent(this, MainActivity.class);
-            startActivity(intent);*/
-            finish();
-        }
-        else if (id == menu.getId()) {
-            Intent intent = new Intent(this, MainActivity.class);
-            startActivity(intent);
-            finish();
-
-        }
-        else if (id == proteger.getId()) {
+        if (id == proteger.getId()) {
            /* Intent intent = new Intent(this, prote.class);
             startActivity(intent);*/
         }
@@ -80,6 +67,7 @@ public class emergencia extends AppCompatActivity  implements View.OnClickListen
         }
         else if (id == socorrer.getId()) {
             Intent intent = new Intent(this, socs.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
         }
 
