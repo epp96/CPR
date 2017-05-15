@@ -44,16 +44,26 @@
                 android:layout_height="0px"
                 android:layout_weight="1"
                 android:id="@+id/proteger"
-                android:text="@string/proteg"/>
+                android:text="@string/proteg"
+                android:textColor="@color/white"
+                android:textSize="50dp"
+                android:background="@drawable/custom_button3"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="0px"
                 android:layout_weight="1"
+                android:textColor="@color/white"
                 android:id="@+id/alert"
+                android:background="@drawable/custom_button3"
+                android:textSize="50dp"
                 android:text="@string/alertar"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="0px"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="50dp"
+                android:background="@drawable/custom_button3"
                 android:layout_weight="1"
                 android:id="@+id/soco"
                 android:text="@string/soco"/>

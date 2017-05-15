@@ -5,6 +5,6 @@
         android:id="@+id/home"
         android:title="home"
         android:icon="@drawable/home"
-        app:showAsAction="never"/>
+        app:showAsAction="ifRoom"/>
 </menu>
 
