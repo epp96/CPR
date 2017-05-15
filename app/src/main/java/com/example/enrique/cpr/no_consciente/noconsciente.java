@@ -58,8 +58,6 @@ public class noconsciente extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         int id = view.getId();
         if (id == back.getId()){
-           /* Intent intent = new Intent(this, socs.class);
-            startActivity(intent);*/
             finish();
         }if (id == menu.getId()){
             Intent intent = new Intent(this, MainActivity.class);

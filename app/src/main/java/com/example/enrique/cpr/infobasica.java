@@ -13,14 +13,17 @@ public class infobasica extends AppCompatActivity implements View.OnClickListene
     Button back;
     Button menu;
     Button botiquin;
+    Button constantes_vitales;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.infobasica);
         back = (Button) findViewById(R.id.back);
-        menu = (Button) findViewById(R.id.menu);
         back.setOnClickListener(this);
+        menu = (Button) findViewById(R.id.menu);
         menu.setOnClickListener(this);
+        constantes_vitales = (Button) findViewById(R.id.vitales);
+        constantes_vitales.setOnClickListener(this);
         botiquin = (Button) findViewById(R.id.botiquin);
         botiquin.setOnClickListener(this);
     }
@@ -29,8 +32,6 @@ public class infobasica extends AppCompatActivity implements View.OnClickListene
     public void onClick(View view) {
         int id = view.getId();
         if (id == back.getId()) {
-            /*Intent intent = new Intent(this, MainActivity.class);
-            startActivity(intent);*/
             finish();
         }
         else if (id == menu.getId()) {
@@ -40,6 +41,9 @@ public class infobasica extends AppCompatActivity implements View.OnClickListene
         }
         else if (id == botiquin.getId()) {
             Intent intent = new Intent(this, botiquin.class);
+            startActivity(intent);
+        } else if (id == constantes_vitales.getId()) {
+            Intent intent = new Intent(this, constantes_vitales.class);
             startActivity(intent);
         }
 

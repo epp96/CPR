@@ -88,6 +88,10 @@
             android:label="@string/atragar"
             android:parentActivityName=".no_consciente.noconsciente" />
         <activity
+            android:name=".consciente.atragantamiento"
+            android:label="@string/atragar"
+            android:parentActivityName=".consciente.consciente" />
+        <activity
             android:name=".no_consciente.paradaCardiaca"
             android:label="@string/paradaC"
             android:parentActivityName=".no_consciente.noconsciente" />
@@ -103,7 +107,10 @@
             android:name=".no_consciente.a"
             android:label="@string/a"
             android:parentActivityName=".no_consciente.noconsciente" />
-        <activity android:name=".consciente.atragantamiento"></activity>
+        <activity
+            android:name=".constantes_vitales"
+            android:label="@string/vitales"
+            android:parentActivityName=".infobasica"/>
     </application>
 
 </manifest>
