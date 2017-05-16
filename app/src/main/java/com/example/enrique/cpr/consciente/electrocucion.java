@@ -1,4 +1,4 @@
-package com.example.enrique.cpr.no_consciente;
+package com.example.enrique.cpr.consciente;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -12,7 +12,7 @@ import android.widget.Toast;
 import com.example.enrique.cpr.MainActivity;
 import com.example.enrique.cpr.R;
 
-public class desmayo extends AppCompatActivity {
+public class electrocucion extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +20,7 @@ public class desmayo extends AppCompatActivity {
         setContentView(R.layout.info);
         WebView webview = (WebView) findViewById(R.id.webview_xml);
         webview.getSettings().setJavaScriptEnabled(true);
-        webview.loadUrl("file:///android_asset/desmayo.html");
+        webview.loadUrl("file:///android_asset/electrocucion.html");
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -28,7 +28,6 @@ public class desmayo extends AppCompatActivity {
         inflater.inflate(R.menu.menu, menu);
         return true;
     }
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {

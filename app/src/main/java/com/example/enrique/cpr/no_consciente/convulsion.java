@@ -20,7 +20,7 @@ public class convulsion extends AppCompatActivity {
         setContentView(R.layout.info);
         WebView webview = (WebView) findViewById(R.id.webview_xml);
         webview.getSettings().setJavaScriptEnabled(true);
-        webview.loadUrl("file:///android_asset/vacio.html");
+        webview.loadUrl("file:///android_asset/convulsion.html");
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

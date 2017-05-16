@@ -110,7 +110,10 @@
         <activity
             android:name=".constantes_vitales"
             android:label="@string/vitales"
-            android:parentActivityName=".infobasica"/>
+            android:parentActivityName=".infobasica" />
+        <activity android:name=".consciente.electrocucion"
+            android:label="@string/rayo"
+            android:parentActivityName=".consciente.consciente"/>
     </application>
 
 </manifest>

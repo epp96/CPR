@@ -26,6 +26,7 @@ public class consciente extends AppCompatActivity implements View.OnClickListene
     Button herida;
     Button envenenamiento;
     Button fractura;
+    Button electrocucion;
     Button golpes;
 
     @Override
@@ -39,6 +40,7 @@ public class consciente extends AppCompatActivity implements View.OnClickListene
         herida = (Button) findViewById(R.id.herida);
         envenenamiento = (Button) findViewById(R.id.veneno);
         fractura = (Button) findViewById(R.id.fractura);
+        electrocucion = (Button) findViewById(R.id.rayo);
         golpes = (Button) findViewById(R.id.golpes);
         calor.setOnClickListener(this);
         quemaduras.setOnClickListener(this);
@@ -47,8 +49,10 @@ public class consciente extends AppCompatActivity implements View.OnClickListene
         herida.setOnClickListener(this);
         envenenamiento.setOnClickListener(this);
         fractura.setOnClickListener(this);
+        electrocucion.setOnClickListener(this);
         golpes.setOnClickListener(this);
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -103,6 +107,10 @@ public class consciente extends AppCompatActivity implements View.OnClickListene
         else if (id == fractura.getId()) {
             //obtener informacion
             Intent intent = new Intent(this, fracturas.class);
+            startActivity(intent);
+        }else if (id == electrocucion.getId()) {
+            //obtener informacion
+            Intent intent = new Intent(this, electrocucion.class);
             startActivity(intent);
         }
         else if (id == golpes.getId()) {
