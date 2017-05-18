@@ -9,11 +9,6 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
-
-import com.example.enrique.cpr.MainActivity;
-import com.example.enrique.cpr.R;
-import com.example.enrique.cpr.socs;
 
 /**
  * Created by Enrique on 3/5/2017.
@@ -23,8 +18,7 @@ public class emergencia extends AppCompatActivity  implements View.OnClickListen
     Button proteger;
     Button alertar;
     Button socorrer;
-    /*Intent intent = new Intent(this, infobasica.class);
-    startActivity(intent);*/
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
