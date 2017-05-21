@@ -19,22 +19,18 @@
                 android:layout_height="0px"
                 android:layout_weight="1"
                 android:text="@string/botiquin"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:background="@drawable/custom_button2"
+                android:textSize="50dp"
+                android:background="@drawable/custom_button"
+                android:textColor="@color/colorPrimary"
                 android:id="@+id/botiquin"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="0px"
                 android:layout_weight="1"
                 android:text="@string/vitales"
-                android:background="@drawable/custom_button2"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
+                android:textSize="50dp"
+                android:background="@drawable/custom_button"
+                android:textColor="@color/colorPrimary"
                 android:id="@+id/vitales"/>
         </LinearLayout>
     </LinearLayout>

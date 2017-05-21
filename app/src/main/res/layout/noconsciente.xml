@@ -21,136 +21,136 @@
                 android:id="@+id/a"
                 android:layout_width="match_parent"
                 android:layout_height="0px"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button5"
+                android:textAllCaps="false"
+                android:textSize="25dp"
                 android:layout_marginBottom="5dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginTop="5dp"
-                android:layout_weight="1"
-                android:textAllCaps="false"
-                android:textSize="40dp"
-                android:background="@drawable/custom_button4"
-                android:text="A"
-                android:textColor="@color/white" />
+                android:textColor="@color/colorPrimary"
+                android:text="A"/>
 
             <Button
                 android:id="@+id/b"
                 android:layout_width="match_parent"
                 android:layout_height="0px"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button5"
+                android:textAllCaps="false"
+                android:textSize="25dp"
                 android:layout_marginBottom="5dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginTop="5dp"
-                android:layout_weight="1"
-                android:textAllCaps="false"
-                android:textSize="40dp"
-                android:background="@drawable/custom_button4"
-                android:text="B"
-                android:textColor="@color/white" />
+                android:textColor="@color/colorPrimary"
+                android:text="B" />
 
             <Button
                 android:id="@+id/c"
                 android:layout_width="match_parent"
                 android:layout_height="0px"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button5"
+                android:textAllCaps="false"
+                android:textSize="25dp"
                 android:layout_marginBottom="5dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginTop="5dp"
-                android:layout_weight="1"
-                android:textAllCaps="false"
-                android:textSize="40dp"
-                android:background="@drawable/custom_button4"
-                android:text="C"
-                android:textColor="@color/white" />
+                android:textColor="@color/colorPrimary"
+                android:text="C" />
 
             <Button
                 android:id="@+id/parada"
                 android:layout_width="match_parent"
                 android:layout_height="0px"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button5"
+                android:textAllCaps="false"
+                android:textSize="25dp"
                 android:layout_marginBottom="5dp"
-                android:layout_marginTop="5dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
-                android:layout_weight="1"
-                android:textAllCaps="false"
-                android:textSize="40dp"
-                android:background="@drawable/custom_button4"
-                android:text="@string/paradaC"
-                android:textColor="@color/white" />
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/paradaC" />
 
             <Button
                 android:id="@+id/atragar"
                 android:layout_width="match_parent"
                 android:layout_height="0px"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button5"
+                android:textAllCaps="false"
+                android:textSize="25dp"
                 android:layout_marginBottom="5dp"
-                android:layout_marginTop="5dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
-                android:layout_weight="1"
-                android:textAllCaps="false"
-                android:textSize="40dp"
-                android:background="@drawable/custom_button4"
-                android:text="@string/atragar"
-                android:textColor="@color/white" />
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/atragar"/>
 
             <Button
                 android:id="@+id/covulsion"
                 android:layout_width="match_parent"
                 android:layout_height="0px"
                 android:layout_weight="1"
+                android:background="@drawable/custom_button5"
+                android:textSize="25dp"
                 android:layout_marginBottom="5dp"
-                android:layout_marginTop="5dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
-                android:background="@drawable/custom_button4"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorPrimary"
                 android:text="@string/convulsion"
-                android:textAllCaps="false"
-                android:textSize="40dp"
-                android:textColor="@color/white" />
+                android:textAllCaps="false"/>
 
             <Button
                 android:id="@+id/desmayo"
                 android:layout_width="match_parent"
                 android:layout_height="0px"
                 android:layout_weight="1"
+                android:background="@drawable/custom_button5"
+                android:textAllCaps="false"
+                android:textSize="25dp"
                 android:layout_marginBottom="5dp"
-                android:layout_marginTop="5dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
-                android:background="@drawable/custom_button4"
-                android:text="@string/desmayo"
-                android:textAllCaps="false"
-                android:textSize="40dp"
-                android:textColor="@color/white" />
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/desmayo" />
 
             <Button
                 android:id="@+id/coma"
                 android:layout_width="match_parent"
                 android:layout_height="0px"
                 android:layout_weight="1"
+                android:background="@drawable/custom_button5"
+                android:textAllCaps="false"
+                android:textSize="25dp"
                 android:layout_marginBottom="5dp"
-                android:layout_marginTop="5dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
-                android:textAllCaps="false"
-                android:textSize="40dp"
-                android:background="@drawable/custom_button4"
-                android:text="@string/coma"
-                android:textColor="@color/white" />
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/coma"/>
 
             <Button
                 android:id="@+id/trauma"
                 android:layout_width="match_parent"
                 android:layout_height="0px"
                 android:layout_weight="1"
+                android:background="@drawable/custom_button5"
+                android:textAllCaps="false"
+                android:textSize="25dp"
                 android:layout_marginBottom="5dp"
-                android:layout_marginTop="5dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
-                android:textAllCaps="false"
-                android:textSize="40dp"
-                android:background="@drawable/custom_button4"
-                android:text="@string/trauma"
-                android:textColor="@color/white" />
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/trauma" />
 
         </LinearLayout>
     </LinearLayout>

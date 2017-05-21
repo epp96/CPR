@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CPR</string>
+    <string name="app_name">Primeros auxilios CES</string>
     <string name="menu">Menú</string>
     <string name="emerg">Emergencia</string>
     <string name="infoB">Información básica</string>

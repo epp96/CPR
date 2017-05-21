@@ -17,20 +17,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="0px"
                 android:layout_weight="1"
-                android:backgroundTint="@color/maroon"
-                android:textSize="40dp"
+                android:textSize="50dp"
+                android:background="@drawable/custom_button"
+                android:textColor="@color/colorPrimary"
                 android:textAllCaps="false"
-                android:textColor="@color/white"
                 android:id="@+id/cons"
                 android:text="@string/cons"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="0px"
                 android:layout_weight="1"
-                android:backgroundTint="@color/maroon"
-                android:textSize="40dp"
-                android:textColor="@color/white"
+                android:textSize="50dp"
+                android:background="@drawable/custom_button"
                 android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
                 android:id="@+id/nocons"
                 android:text="@string/nocons"/>
         </LinearLayout>
