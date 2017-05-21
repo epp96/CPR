@@ -52,11 +52,14 @@ public class emergencia extends AppCompatActivity  implements View.OnClickListen
     public void onClick(View view) {
         int id = view.getId();
         if (id == proteger.getId()) {
-           /* Intent intent = new Intent(this, prote.class);
-            startActivity(intent);*/
+            Intent intent = new Intent(this, proteger.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(intent);
         }
         else if (id == alertar.getId()) {
-
+            Intent intent = new Intent(this, alertar.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(intent);
         }
         else if (id == socorrer.getId()) {
             Intent intent = new Intent(this, socs.class);

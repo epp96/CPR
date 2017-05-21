@@ -142,6 +142,16 @@
             android:label="@string/rayo"
             android:parentActivityName=".consciente.consciente"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".proteger"
+            android:label="@string/proteg"
+            android:parentActivityName=".emergencia"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".alertar"
+            android:label="@string/alertar"
+            android:parentActivityName=".emergencia"
+            android:screenOrientation="portrait" ></activity>
     </application>
 
 </manifest>

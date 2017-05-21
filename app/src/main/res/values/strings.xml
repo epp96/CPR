@@ -20,7 +20,7 @@
     <string name="paradaC">Parada cardiaca</string>
     <string name="convulsion">Convulsión</string>
     <string name="desmayo">Desmayo</string>
-    <string name="coma">Coma</string>
+    <string name="coma">Coma/Pérdida de conocimiento</string>
     <string name="trauma">Traumatismo</string>
     <string name="botiquin">Botiquín</string>
     <string name="vitales">Constantes vitales</string>
