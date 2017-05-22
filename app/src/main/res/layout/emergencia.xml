@@ -20,7 +20,7 @@
                 android:textAllCaps="false"
                 android:id="@+id/proteger"
                 android:text="@string/proteg"
-                android:textSize="50dp"
+                android:textSize="50sp"
                 android:textColor="@color/colorPrimary"
                 android:background="@drawable/custom_button"/>
             <Button
@@ -29,7 +29,7 @@
                 android:textAllCaps="false"
                 android:layout_weight="1"
                 android:id="@+id/alert"
-                android:textSize="50dp"
+                android:textSize="50sp"
                 android:textColor="@color/colorPrimary"
                 android:background="@drawable/custom_button"
                 android:text="@string/alertar"/>
@@ -37,7 +37,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0px"
                 android:textAllCaps="false"
-                android:textSize="50dp"
+                android:textSize="50sp"
                 android:background="@drawable/custom_button"
                 android:textColor="@color/colorPrimary"
                 android:layout_weight="1"

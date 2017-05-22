@@ -20,7 +20,7 @@
                 android:layout_weight="1"
                 android:text="@string/botiquin"
                 android:textAllCaps="false"
-                android:textSize="50dp"
+                android:textSize="50sp"
                 android:background="@drawable/custom_button"
                 android:textColor="@color/colorPrimary"
                 android:id="@+id/botiquin"/>
@@ -30,7 +30,7 @@
                 android:layout_weight="1"
                 android:textAllCaps="false"
                 android:text="@string/vitales"
-                android:textSize="50dp"
+                android:textSize="50sp"
                 android:background="@drawable/custom_button"
                 android:textColor="@color/colorPrimary"
                 android:id="@+id/vitales"/>
