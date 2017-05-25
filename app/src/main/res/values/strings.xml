@@ -17,7 +17,7 @@
     <string name="fractura">Fractura</string>
     <string name="rayo">Electrocución</string>
     <string name="golpes">Golpes</string>
-    <string name="paradaC">Parada cardiaca</string>
+    <string name="paradaC">Parada cardio-respiratoria</string>
     <string name="convulsion">Convulsión</string>
     <string name="desmayo">Desmayo</string>
     <string name="coma">Coma/Pérdida de conocimiento</string>
