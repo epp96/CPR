@@ -151,7 +151,7 @@
             android:name=".alertar"
             android:label="@string/alertar"
             android:parentActivityName=".emergencia"
-            android:screenOrientation="portrait" ></activity>
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
