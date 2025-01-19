@@ -1,39 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="./css/styles.css">
-  <meta charset="utf-8" />
-  <script src="./javascript/jquery.js"></script>
-  <script src="./javascript/arriba.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
 </head>
 
 <body>
-<span class="ir-arriba glyphicon glyphicon-arrow-up"></span>
+    <div class="ir-arriba">
+        <i class="fas fa-arrow-up"></i>
+    </div>
 
-<!-- Title -->
-<div class="container">
-  <h1>ALERTAR</h1>
-</div>
+    <div class="container">
+        <h1><i class="fas fa-phone-volume"></i> ALERTAR</h1>
 
+        <div class="card">
+            <div class="warning">
+                <i class="fas fa-exclamation-circle"></i>
+                <strong>Número de emergencias: 112</strong>
+            </div>
+            
+            <ul>
+                <li><i class="fas fa-users"></i> Avisar a las personas que están a nuestro alrededor para que nos ayuden.</li>
+                <li><i class="fas fa-phone"></i> Llamar al teléfono de emergencias 112 para pedir instrucciones y recibir ayuda si es necesario.</li>
+                <li><i class="fas fa-info-circle"></i> Informar de: 
+                    <ul>
+                        <li>Tipo de accidente</li>
+                        <li>Lugar exacto</li>
+                        <li>Número de heridos y su estado</li>
+                        <li>Medidas tomadas</li>
+                        <li>Tu nombre y papel (socorrista, testigo…)</li>
+                    </ul>
+                </li>
+                <li><i class="fas fa-headset"></i> No cortar la comunicación hasta que el servicio de emergencia lo autorice.</li>
+            </ul>
+        </div>
+    </div>
 
-
-<!-- Content -->
-
-<div class="container" id="id1">
-  <ul>
-    <li>Avisar a las personas que están a nuestro alrededor para que nos ayuden.</li>
-    <li>Llamar al teléfono de emergencias 112 para pedir instrucciones y recibir ayuda si es necesario.</li>
-    <li>Informar de: tipo de accidente, lugar, número de heridos y su estado, qué medidas se han tomado, tu nombre y tu papel (socorrista, testigo…).</li>
-    <li>No cortar la comunicación hasta que el servicio de emergencia lo autorice.</li>
-  </ul>
-
-
-</div>
-<br/>
-<br/>
-<br/>
-
+    <script src="./javascript/jquery.js"></script>
+    <script src="./javascript/arriba.js"></script>
 </body>
 </html>

@@ -1,82 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
-    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="./css/styles.css">
     <meta charset="utf-8" />
-    <script src="./javascript/jquery.js"></script>
-    <script src="./javascript/arriba.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
   </head>
 
-    <body>
-    <span class="ir-arriba glyphicon glyphicon-arrow-up"></span>
-
-
-    <div class="container">
-      <h1>HERIDAS</h1>
+  <body>
+    <div class="ir-arriba">
+      <i class="fas fa-arrow-up"></i>
     </div>
 
-
     <div class="container">
-      <div class="box">
-        <ul>
-          <li><a href="#tratamiento">Tratamiento</a></li>
-          <li><a href="#rec">Recomendaciones</a></li>
-          <li><a href="#corte">Corte</a></li>
-        </ul>
+      <h1><i class="fas fa-band-aid"></i> HERIDAS</h1>
+
+      <nav class="nav-menu">
+        <a href="#tratamiento"><i class="fas fa-first-aid"></i> Tratamiento</a>
+        <a href="#rec"><i class="fas fa-exclamation-circle"></i> Recomendaciones</a>
+        <a href="#corte"><i class="fas fa-cut"></i> Corte</a>
+      </nav>
+
+      <div class="card" id="tratamiento">
+        <h2><i class="fas fa-first-aid"></i> TRATAMIENTO</h2>
+        <ol>
+          <li><i class="fas fa-hands-wash"></i> Lavarse las manos y usar guantes</li>
+          <li><i class="fas fa-arrows-alt"></i> Limpiar la herida de dentro hacia fuera</li>
+          <li><i class="fas fa-wind"></i> Secar sin frotar, solo ligera presión</li>
+          <li><i class="fas fa-band-aid"></i> Utilizar gasas estériles</li>
+          <li><i class="fas fa-tint"></i> Parar hemorragia</li>
+          <li><i class="fas fa-pump-medical"></i> Aplicar un antiséptico local</li>
+          <li><i class="fas fa-bandage"></i> Cubrir herida</li>
+          <li><i class="fas fa-eye"></i> Vigilar al herido y si precisa llamar al 112</li>
+          <li>
+            <i class="fas fa-clock"></i> Posteriormente:
+            <ul>
+              <li><i class="fas fa-band-aid"></i> Curar 1 vez al día</li>
+              <li><i class="fas fa-sun"></i> No exponer al sol directamente</li>
+              <li><i class="fas fa-hand-paper"></i> No arrancar las costras</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+
+      <div class="card" id="rec">
+        <h2><i class="fas fa-exclamation-circle"></i> RECOMENDACIONES</h2>
+        <div class="warning">
+          <ul>
+            <li><i class="fas fa-ban"></i> No usar algodón, pañuelos o servilletas</li>
+            <li><i class="fas fa-ban"></i> No usar alcohol ni productos agresivos</li>
+            <li><i class="fas fa-ban"></i> No aplicar pomadas o polvos cicatrizantes</li>
+            <li><i class="fas fa-ban"></i> No hurgar en la herida</li>
+            <li><i class="fas fa-ban"></i> En caso de objeto punzante no quitarlo ni manipularlo</li>
+            <li><i class="fas fa-check-circle"></i> Cubrir y proteger la zona herida</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card" id="corte">
+        <h2><i class="fas fa-cut"></i> CORTE</h2>
+        <ol>
+          <li><i class="fas fa-clipboard-check"></i> PAS</li>
+          <li><i class="fas fa-phone"></i> Si es muy profundo o grande valorar si aviso a 112 + ABC</li>
+          <li><i class="fas fa-hands-wash"></i> Ponerse guantes y presionar la herida con gasas limpias</li>
+          <li><i class="fas fa-plus"></i> Si no cede añadir más gasas sin retirar las anteriores</li>
+          <li><i class="fas fa-arrow-up"></i> Elevar el miembro afectado (si no hay fractura)</li>
+          <li><i class="fas fa-hand-paper"></i> Compresión arterial si el sangrado no cede</li>
+          <li><i class="fas fa-bandage"></i> Aplicar vendaje compresivo</li>
+          <li>
+            <div class="warning">
+              <i class="fas fa-exclamation-triangle"></i> Si hay objeto clavado NO RETIRAR, sujetar con vendaje
+            </div>
+          </li>
+        </ol>
       </div>
     </div>
 
-    <div class="container" id="tratamiento">
-      <h2>TRATAMIENTO</h2>
-      <ol>
-        <li>Lavarse las manos y usar guantes</li>
-        <li>Limpiar la herida de dentro hacia fuera</li>
-        <li>Secar sin frotar, solo ligera presión</li>
-        <li>Utilizar gasas estériles</li>
-        <li>Parar hemorragia</li>
-        <li>Aplicar un antiséptico local</li>
-        <li>Cubrir herida</li>
-        <li>Vigilar al herido y si precisa llamar al 112</li>
-        <li>
-          Posteriormente:
-          <ul>
-            <li>Curar 1 vez al día</li>
-            <li>No exponer al sl directamente</li>
-            <li>No arrancar las costras</li>
-          </ul>
-        </li>
-      </ol>
-
-      <h2 id="rec">RECOMENDACIONES</h2>
-      <ul>
-        <li>No usar algodón, pañuelos o servilletas</li>
-        <li>No usar alcohol ni productos agresivos</li>
-        <li>No aplicar pomadas o polvos cicatrizantes</li>
-        <li>No hurgar en la herida</li>
-        <li>En caso de objeto punzante no quitarlo ni manipularlo</li>
-        <li>Cubrir y proteger la zona herida</li>
-      </ul>
-    </div>
-
-    <div class="container" id="corte">
-      <h2>CORTE</h2>
-      <ul>
-        <li>PAS</li>
-        <li>Si es muy profundo o grande valorar si aviso a 112 + ABC</li>
-        <li>Ponerse guantes y presionar la herida con gasas limpias</li>
-        <li>Si no cede añadir más gasas sin retirar las anteriores</li>
-        <li>Elevar el miembro afectado (si no hay fractura)</li>
-        <li>Compresión arterial si el sangrado no cede</li>
-        <li>Aplicar vendaje compresivo</li>
-        <li>Si hay objeto clavado NO RETIRAR, sujetar con vendaje</li>
-      </ul>
-    </div>
-    <br/>
-    <br/>
-    <br/>
-
-
-    </body>
+    <script src="./javascript/jquery.js"></script>
+    <script src="./javascript/arriba.js"></script>
+  </body>
 </html>

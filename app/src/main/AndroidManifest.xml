@@ -18,139 +18,139 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".emergencia"
+            android:name=".Emergencia"
             android:label="@string/emerg"
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".consciente.consciente"
+            android:name=".consciente.Consciente"
             android:label="@string/cons"
-            android:parentActivityName=".socs"
+            android:parentActivityName=".Socs"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".infobasica"
+            android:name=".InfoBasica"
             android:label="@string/infoB"
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".no_consciente.noconsciente"
+            android:name=".no_consciente.NoConsciente"
             android:label="@string/nocons"
-            android:parentActivityName=".socs"
+            android:parentActivityName=".Socs"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".socs"
+            android:name=".Socs"
             android:label="@string/soco"
-            android:parentActivityName=".emergencia"
+            android:parentActivityName=".Emergencia"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".consciente.heridas"
+            android:name=".consciente.Heridas"
             android:label="@string/herida"
-            android:parentActivityName=".consciente.consciente"
+            android:parentActivityName=".consciente.Consciente"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".botiquin"
+            android:name=".Botiquin"
             android:label="@string/botiquin"
-            android:parentActivityName=".infobasica"
+            android:parentActivityName=".InfoBasica"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".consciente.fracturas"
+            android:name=".consciente.Fracturas"
             android:label="@string/fractura"
-            android:parentActivityName=".consciente.consciente"
+            android:parentActivityName=".consciente.Consciente"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".consciente.hemorragias"
+            android:name=".consciente.Hemorragias"
             android:label="@string/hemo"
-            android:parentActivityName=".consciente.consciente"
+            android:parentActivityName=".consciente.Consciente"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".consciente.envenenamiento"
+            android:name=".consciente.Envenenamiento"
             android:label="@string/veneno"
-            android:parentActivityName=".consciente.consciente"
+            android:parentActivityName=".consciente.Consciente"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".consciente.golpes"
+            android:name=".consciente.Golpes"
             android:label="@string/golpes"
-            android:parentActivityName=".consciente.consciente"
+            android:parentActivityName=".consciente.Consciente"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".consciente.golpedecalor"
+            android:name=".consciente.GolpeDeCalor"
             android:label="@string/golped"
-            android:parentActivityName=".consciente.consciente"
+            android:parentActivityName=".consciente.Consciente"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".consciente.quemaduras"
+            android:name=".consciente.Quemaduras"
             android:label="@string/fuego"
-            android:parentActivityName=".consciente.consciente"
+            android:parentActivityName=".consciente.Consciente"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".no_consciente.traumatismo"
+            android:name=".no_consciente.Traumatismo"
             android:label="@string/trauma"
-            android:parentActivityName=".no_consciente.noconsciente"
+            android:parentActivityName=".no_consciente.NoConsciente"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".no_consciente.coma"
+            android:name=".no_consciente.Coma"
             android:label="@string/coma"
-            android:parentActivityName=".no_consciente.noconsciente"
+            android:parentActivityName=".no_consciente.NoConsciente"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".no_consciente.desmayo"
+            android:name=".no_consciente.Desmayo"
             android:label="@string/desmayo"
-            android:parentActivityName=".no_consciente.noconsciente"
+            android:parentActivityName=".no_consciente.NoConsciente"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".no_consciente.convulsion"
+            android:name=".no_consciente.Convulsion"
             android:label="@string/convulsion"
-            android:parentActivityName=".no_consciente.noconsciente"
+            android:parentActivityName=".no_consciente.NoConsciente"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".no_consciente.atragantamiento"
+            android:name=".no_consciente.Atragantamiento"
             android:label="@string/atragar"
-            android:parentActivityName=".no_consciente.noconsciente"
+            android:parentActivityName=".no_consciente.NoConsciente"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".consciente.atragantamiento"
+            android:name=".consciente.Atragantamiento"
             android:label="@string/atragar"
-            android:parentActivityName=".consciente.consciente"
+            android:parentActivityName=".consciente.Consciente"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".no_consciente.paradaCardiaca"
+            android:name=".no_consciente.ParadaCardiaca"
             android:label="@string/paradaC"
-            android:parentActivityName=".no_consciente.noconsciente"
+            android:parentActivityName=".no_consciente.NoConsciente"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".no_consciente.c"
+            android:name=".no_consciente.C"
             android:label="@string/c"
-            android:parentActivityName=".no_consciente.noconsciente"
+            android:parentActivityName=".no_consciente.NoConsciente"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".no_consciente.b"
+            android:name=".no_consciente.B"
             android:label="@string/b"
-            android:parentActivityName=".no_consciente.noconsciente"
+            android:parentActivityName=".no_consciente.NoConsciente"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".no_consciente.a"
+            android:name=".no_consciente.A"
             android:label="@string/a"
-            android:parentActivityName=".no_consciente.noconsciente"
+            android:parentActivityName=".no_consciente.NoConsciente"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".constantes_vitales"
+            android:name=".ConstantesVitales"
             android:label="@string/vitales"
-            android:parentActivityName=".infobasica"
+            android:parentActivityName=".InfoBasica"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".consciente.electrocucion"
+            android:name=".consciente.Electrocucion"
             android:label="@string/rayo"
-            android:parentActivityName=".consciente.consciente"
+            android:parentActivityName=".consciente.Consciente"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".proteger"
+            android:name=".Proteger"
             android:label="@string/proteg"
-            android:parentActivityName=".emergencia"
+            android:parentActivityName=".Emergencia"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".alertar"
+            android:name=".Alertar"
             android:label="@string/alertar"
-            android:parentActivityName=".emergencia"
+            android:parentActivityName=".Emergencia"
             android:screenOrientation="portrait" />
     </application>
 

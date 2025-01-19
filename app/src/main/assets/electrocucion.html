@@ -1,40 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="./css/styles.css">
-  <meta charset="utf-8" />
-  <script src="./javascript/jquery.js"></script>
-  <script src="./javascript/arriba.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
 </head>
 
 <body>
-<span class="ir-arriba glyphicon glyphicon-arrow-up"></span>
+    <div class="ir-arriba">
+        <i class="fas fa-arrow-up"></i>
+    </div>
 
-<!-- Title -->
-<div class="container">
-  <h1>ELECTROCUCIÓN</h1>
-</div>
+    <div class="container">
+        <h1><i class="fas fa-bolt"></i> ELECTROCUCIÓN</h1>
 
+        <div class="card">
+            <h2><i class="fas fa-clipboard-list"></i> Qué hacer:</h2>
+            
+            <div class="warning">
+                <i class="fas fa-exclamation-triangle"></i>
+                <strong>¡IMPORTANTE!</strong> Antes de tocar a la víctima:
+            </div>
+            
+            <ul>
+                <li>
+                    <i class="fas fa-plug"></i> Desconectar la corriente eléctrica
+                    <div class="important">
+                        Si no es posible, protegerse con material aislante
+                    </div>
+                </li>
+                <li><i class="fas fa-hand-paper"></i> Retirar a la víctima del contacto eléctrico con un objeto no conductor</li>
+                <li><i class="fas fa-exclamation-circle"></i> Prever la caída al suelo de la víctima</li>
+                <li><i class="fas fa-heartbeat"></i> Realizar ABC y si se dispone usar un DESA</li>
+                <li><i class="fas fa-burn"></i> Tratar los orificios de entrada y salida de la corriente como una quemadura</li>
+                <li><i class="fas fa-phone"></i> Llamar al 112 y procurar un traslado urgente</li>
+                <li>
+                    <div class="warning">
+                        <i class="fas fa-user-md"></i> Toda persona afectada por una descarga eléctrica deberá ser puesta bajo vigilancia médica por riesgo de arritmia, paro cardiaco…
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
 
-<!-- Content -->
-
-<div class="container" id="id1">
-  <h2>Qué hacer:</h2>
-  <ol>
-    <li>Desconectar la corriente eléctrica antes de tocar a la víctima, si no se puede, protegerse con aislante</li>
-    <li>Retirarla del contacto eléctrico con un objeto no conductor/prever la caída al suelo de la víctima</li>
-    <li>Realizar ABC y si se dispone usar un DESA</li>
-    <li>Tratar los orificios de entrada y salida de la corriente como una quemadura</li>
-    <li>Llamar al 112 y procurar un traslado urgente</li>
-    <li>Toda persona afectada por una descarga eléctrica deberá ser puesta bajo vigilancia médica por riesgo de arritmia, paro cardiaco…</li>
-  </ol>
-</div>
-<br/>
-<br/>
-<br/>
-
-
+    <script src="./javascript/jquery.js"></script>
+    <script src="./javascript/arriba.js"></script>
 </body>
 </html>

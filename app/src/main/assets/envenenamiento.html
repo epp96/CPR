@@ -1,74 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
-      <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" type="text/css" href="./css/styles.css">
       <meta charset="utf-8" />
-      <script src="./javascript/jquery.js"></script>
-  		<script src="./javascript/arriba.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+      <link rel="stylesheet" type="text/css" href="./css/styles.css">
     </head>
 
     <body>
-    <span class="ir-arriba glyphicon glyphicon-arrow-up"></span>
-
-    <div class="container">
-      <h1>ENVENENAMIENTO</h1>
+    <div class="ir-arriba">
+        <i class="fas fa-arrow-up"></i>
     </div>
 
-    <!-- Index -->
     <div class="container">
-      <div class="box">
-        <ul>
-          <li><a href="#id1">Intoxicación y envenenamiento</a></li>
-          <li><a href="#id2">Tratamiento</a></li>
-          <li><a href="#id3">Tratamiento envenenamiento sustancia cáustica</a></li>
-        </ul>
+      <h1><i class="fas fa-skull-crossbones"></i> ENVENENAMIENTO</h1>
+
+      <nav class="nav-menu">
+          <a href="#info"><i class="fas fa-info-circle"></i> Información general</a>
+          <a href="#tratamiento"><i class="fas fa-first-aid"></i> Tratamiento</a>
+          <a href="#caustico"><i class="fas fa-flask"></i> Sustancia cáustica</a>
+      </nav>
+
+      <div class="card" id="info">
+          <h2><i class="fas fa-info-circle"></i> Intoxicación y envenenamiento</h2>
+          <ul>
+              <li><i class="fas fa-pills"></i> Ingestión/contacto con sustancias tóxicas nocivas que alteran el sistema digestivo, nervioso, respiratorio y circulatorio</li>
+              <li>
+                  <i class="fas fa-clipboard-list"></i> Criterios de gravedad:
+                  <ul>
+                      <li><i class="fas fa-flask"></i> Tipo de producto</li>
+                      <li><i class="fas fa-route"></i> Vía de entrada (ingestión, inhalación, contacto)</li>
+                      <li><i class="fas fa-weight"></i> Cantidad</li>
+                      <li><i class="fas fa-clock"></i> Tiempo transcurrido</li>
+                      <li><i class="fas fa-user"></i> Edad (niños, ancianos)</li>
+                  </ul>
+              </li>
+              <li>
+                  <i class="fas fa-exclamation-circle"></i> Síntomas:
+                  <ul>
+                      <li><i class="fas fa-fire"></i> Quemaduras/enrojecimiento de boca o labios</li>
+                      <li><i class="fas fa-wind"></i> Aliento extraño</li>
+                      <li><i class="fas fa-tshirt"></i> Manchas en ropa y olor extraño</li>
+                      <li><i class="fas fa-bolt"></i> Síntomas inesperados y repentinos</li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+
+      <div class="card" id="tratamiento">
+          <h2><i class="fas fa-first-aid"></i> Tratamiento</h2>
+          <ul>
+              <li><i class="fas fa-phone"></i> Llamar 112</li>
+              <li>
+                  <i class="fas fa-info-circle"></i> Informar de:
+                  <ul>
+                      <li>Edad y estado del afectado</li>
+                      <li>Envase del producto</li>
+                      <li>Cantidad ingerida</li>
+                      <li>Tiempo de ingesta</li>
+                  </ul>
+              </li>
+              <li>
+                  <div class="warning">
+                      <i class="fas fa-vomit"></i> Provocar el vómito SOLO en caso de:
+                      <ul>
+                          <li>Medicamentos</li>
+                          <li>Alimentos en mal estado</li>
+                          <li>Venenos sólidos (setas y plantas)</li>
+                          <li>Agua no potable</li>
+                      </ul>
+                  </div>
+              </li>
+          </ul>
+      </div>
+
+      <div class="card" id="caustico">
+          <h2><i class="fas fa-flask"></i> Tratamiento envenenamiento sustancia cáustica</h2>
+          
+          <div class="card">
+              <h3><i class="fas fa-check-circle"></i> Consciente</h3>
+              <ul>
+                  <li><i class="fas fa-phone"></i> Llamar 112</li>
+                  <li><i class="fas fa-question-circle"></i> Consultar si administrar agua</li>
+                  <li><i class="fas fa-bed"></i> Posición Lateral de Seguridad y abrigar</li>
+                  <li><i class="fas fa-shower"></i> Si hay restos del tóxico → lavar con agua, retirar ropa impregnada</li>
+              </ul>
+          </div>
+
+          <div class="card">
+              <h3><i class="fas fa-times-circle"></i> Inconsciente</h3>
+              <ul>
+                  <li><i class="fas fa-phone"></i> Llamar 112</li>
+                  <li><i class="fas fa-clipboard-check"></i> Control ABC</li>
+              </ul>
+          </div>
       </div>
     </div>
 
-      <div class="container" id="id1">
-        <h2>INTOXICACIÓN Y ENVENENAMIENTO</h2>
-        <ul>
-          <li>Ingestión/contacto con sustancias tóxicas nocivas que alteran el sistema digestivo, nervioso, respiratorio y circulatorio</li>
-          <li>Criterios de gravedad: tipo de producto, vía de entrada (ingestión, inhalación, contacto), cantidad, tiempo transcurrido, edad (niños, ancianos)</li>
-          <li>Síntomas: quemaduras/enrojecimiento de boca o labios, aliento extraño, manchas en ropa y olor extraño, síntomas inesperados y repentinos</li>
-        </ul>
-      </div>
-
-      <div class="container" id="id2">
-        <h2>TRATAMIENTO</h2>
-        <ul>
-          <li>Llamar 112</li>
-          <li>Informar de: edad y estado del afectado, envase del producto, cantidad ingerida, tiempo de ingesta</li>
-          <li>Provocar el vómito en caso de: medicamentos, alimentos en mal estado, venenos sólidos (setas y plantas), agua no potable</li>
-        </ul>
-      </div>
-
-      <div class="container" id="id3">
-        <h2>TRATAMIENTO ENVENENAMIENTO SUSTANCIA CÁUSTICA</h2>
-        <ul>
-          <li>
-            <h3>CONSCIENTE</h3>
-            <ul>
-              <li>Llamar 112</li>
-              <li>Consultar si administrar agua</li>
-              <li>Posición Lateral de Seguridad y abrigar</li>
-              <li>Si hay restos del tóxico→ lavar con agua, retirar ropa impregnada</li>
-            </ul>
-          </li>
-          <li>
-            <h3>INCONSCIENTE</h3>
-            <ul>
-              <li>Llamar 112</li>
-              <li>Control ABC</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <br/>
-      <br/>
-      <br/>
-
+    <script src="./javascript/jquery.js"></script>
+    <script src="./javascript/arriba.js"></script>
     </body>
 </html>

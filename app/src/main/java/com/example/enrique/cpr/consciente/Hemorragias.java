@@ -1,4 +1,4 @@
-package com.example.enrique.cpr.no_consciente;
+package com.example.enrique.cpr.consciente;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,16 +11,17 @@ import android.webkit.WebView;
 import com.example.enrique.cpr.MainActivity;
 import com.example.enrique.cpr.R;
 
-public class coma extends AppCompatActivity {
+public class Hemorragias extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.info);
-        WebView webview = (WebView) findViewById(R.id.webview_xml);
-        webview.getSettings().setJavaScriptEnabled(true);
-        webview.loadUrl("file:///android_asset/coma.html");
+        WebView webView = findViewById(R.id.webview_xml);
+        webView.getSettings().setJavaScriptEnabled(true);
+        webView.loadUrl("file:///android_asset/hemorragias.html");
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -30,13 +31,12 @@ public class coma extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
-                finish();
-                break;
+        if (item.getItemId() == android.R.id.home) {
+            Intent intent = new Intent(this, MainActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(intent);
+            finish();
+            return true;
         }
         return super.onOptionsItemSelected(item);
     }

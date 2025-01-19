@@ -1,200 +1,174 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
-    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="./css/styles.css">
     <meta charset="utf-8" />
-    <script src="./javascript/jquery.js"></script>
-    <script src="./javascript/arriba.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
   </head>
 
-    <body>
-    <span class="ir-arriba glyphicon glyphicon-arrow-up"></span>
-
-    <div class="container">
-      <h1>GOLPES</h1>
+  <body>
+    <div class="ir-arriba">
+      <i class="fas fa-arrow-up"></i>
     </div>
 
-
     <div class="container">
-      <div class="box">
-        <ul>
-          <li><a href="#contusion">Contusión</a></li>
-          <li><a href="#esguince">Esguince</a></li>
-          <li><a href="#luxacion">Luxación</a></li>
-          <li><a href="#les_muscular">Lesión muscular</a></li>
-          <li><a href="#craneo_encef">Traumatismo cráneo-encefálico</a></li>
-          <li><a href="#espalda">Traumatismo de espalda</a></li>
-          <li><a href="#toracico">Traumatismo torácico</a></li>
-          <li><a href="#abdominal">Traumatismo abdominal</a></li>
-        </ul>
+      <h1><i class="fas fa-user-injured"></i> GOLPES</h1>
+
+      <nav class="nav-menu">
+        <a href="#contusion"><i class="fas fa-bullseye"></i> Contusión</a>
+        <a href="#esguince"><i class="fas fa-hand-holding-medical"></i> Esguince</a>
+        <a href="#luxacion"><i class="fas fa-bone"></i> Luxación</a>
+        <a href="#les_muscular"><i class="fas fa-running"></i> Lesión muscular</a>
+        <a href="#craneo_encef"><i class="fas fa-head-side-virus"></i> Traumatismo craneal</a>
+        <a href="#espalda"><i class="fas fa-user"></i> Trauma espalda</a>
+        <a href="#toracico"><i class="fas fa-lungs"></i> Trauma torácico</a>
+        <a href="#abdominal"><i class="fas fa-stomach"></i> Trauma abdominal</a>
+      </nav>
+
+      <div class="card" id="contusion">
+        <h2><i class="fas fa-bullseye"></i> CONTUSIÓN</h2>
+        <div class="card">
+          <h3><i class="fas fa-notes-medical"></i> Síntomas</h3>
+          <ul>
+            <li><i class="fas fa-bolt"></i> Dolor</li>
+            <li><i class="fas fa-expand"></i> Inflamación</li>
+            <li><i class="fas fa-tint"></i> Hematoma</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3><i class="fas fa-first-aid"></i> Qué hacer</h3>
+          <ol>
+            <li><i class="fas fa-hand-paper"></i> Inmovilizar zona afectada</li>
+            <li><i class="fas fa-arrow-up"></i> Elevarla</li>
+            <li><i class="fas fa-snowflake"></i> Frío</li>
+            <li><i class="fas fa-ban"></i> No pinchar los hematomas</li>
+            <li><i class="fas fa-hospital"></i> Centro sanitario</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="card" id="esguince">
+        <h2><i class="fas fa-hand-holding-medical"></i> ESGUINCE</h2>
+        <div class="card">
+          <h3><i class="fas fa-notes-medical"></i> Síntomas</h3>
+          <ul>
+            <li><i class="fas fa-fire"></i> Enrojecimiento</li>
+            <li><i class="fas fa-temperature-high"></i> Calor</li>
+            <li><i class="fas fa-expand"></i> Hinchazón</li>
+            <li><i class="fas fa-bolt"></i> Dolor</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3><i class="fas fa-first-aid"></i> Qué hacer</h3>
+          <ol>
+            <li><i class="fas fa-bandage"></i> Inmovilizar articulación (vendaje almohadillado, elástico y compresivo)</li>
+            <li><i class="fas fa-arrow-up"></i> Elevar miembro afectado</li>
+            <li><i class="fas fa-bed"></i> Reposo</li>
+            <li><i class="fas fa-snowflake"></i> Frío (20')</li>
+            <li><i class="fas fa-prescription-bottle-alt"></i> No pomadas</li>
+            <li><i class="fas fa-hospital"></i> Centro sanitario</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="card" id="luxacion">
+        <h2><i class="fas fa-bone"></i> LUXACIÓN</h2>
+        <div class="card">
+          <h3><i class="fas fa-notes-medical"></i> Síntomas</h3>
+          <ul>
+            <li><i class="fas fa-bolt"></i> Dolor intenso</li>
+            <li><i class="fas fa-expand"></i> Hinchazón</li>
+            <li><i class="fas fa-hand-paper"></i> Dificultad de movimientos</li>
+            <li><i class="fas fa-bone"></i> Deformación</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3><i class="fas fa-first-aid"></i> Qué hacer</h3>
+          <ol>
+            <li><i class="fas fa-bandage"></i> Inmovilizar articulación (vendaje almohadillado, elástico y compresivo)</li>
+            <li><i class="fas fa-arrow-up"></i> Elevar miembro y reposo</li>
+            <li><i class="fas fa-snowflake"></i> Frío local</li>
+            <li><i class="fas fa-hospital"></i> Centro sanitario</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="card" id="les_muscular">
+        <h2><i class="fas fa-running"></i> LESIÓN MUSCULAR</h2>
+        <div class="card">
+          <h3><i class="fas fa-first-aid"></i> Qué hacer</h3>
+          <ol>
+            <li><i class="fas fa-bandage"></i> Inmovilizar zona afectada (vendaje almohadillado, elástico y compresivo)</li>
+            <li><i class="fas fa-arrow-up"></i> Elevar miembro y reposo</li>
+            <li><i class="fas fa-snowflake"></i> Frío local</li>
+            <li><i class="fas fa-prescription-bottle-alt"></i> No pomadas</li>
+            <li><i class="fas fa-hospital"></i> Centro sanitario</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="card" id="craneo_encef">
+        <h2><i class="fas fa-head-side-virus"></i> TRAUMATISMO CRÁNEO-ENCEFÁLICO</h2>
+        <div class="card important">
+          <h3><i class="fas fa-first-aid"></i> Qué hacer</h3>
+          <ol>
+            <li><i class="fas fa-eye"></i> Valorar consciencia AVDN (Alerta, Respuesta Verbal, Responde al Dolor, No responde)</li>
+            <li><i class="fas fa-lungs"></i> Asegurar permeabilidad de vía aérea y controlar cuello</li>
+            <li><i class="fas fa-bed"></i> Tumbar boca arriba (elevación cabecera 30°)</li>
+            <li><i class="fas fa-tint"></i> Control hemorragias</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="card" id="espalda">
+        <h2><i class="fas fa-user"></i> TRAUMATISMO DE ESPALDA</h2>
+        <div class="card important">
+          <h3><i class="fas fa-first-aid"></i> Qué hacer</h3>
+          <ol>
+            <li><i class="fas fa-clipboard-check"></i> ABC</li>
+            <li><i class="fas fa-head-side"></i> Control del cuello, cabeza y tronco alineados</li>
+            <li><i class="fas fa-phone"></i> Llamar al 112</li>
+            <li><i class="fas fa-hand-paper"></i> No mover</li>
+            <li><i class="fas fa-sync"></i> Si está boca abajo → movilizar en bloque</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="card" id="toracico">
+        <h2><i class="fas fa-lungs"></i> TRAUMATISMO TORÁCICO</h2>
+        <div class="card important">
+          <h3><i class="fas fa-first-aid"></i> Qué hacer</h3>
+          <ol>
+            <li><i class="fas fa-smile"></i> Tranquilizar al paciente</li>
+            <li><i class="fas fa-lungs"></i> Permeabilidad vía aérea</li>
+            <li><i class="fas fa-tint"></i> Control hemorragias</li>
+            <li><i class="fas fa-bed"></i> Paciente semisentado (30-45° cabecera)</li>
+            <li><i class="fas fa-band-aid"></i> Traumatismo abierto → ocluir herida fijando solo 3 bordes (apósitos estériles)</li>
+            <li><i class="fas fa-exclamation-triangle"></i> Objetos clavados → fijarlos, no retirarlos</li>
+            <li><i class="fas fa-hospital"></i> Centro sanitario</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="card" id="abdominal">
+        <h2><i class="fas fa-stomach"></i> TRAUMATISMO ABDOMINAL</h2>
+        <div class="card important">
+          <h3><i class="fas fa-first-aid"></i> Qué hacer</h3>
+          <ol>
+            <li><i class="fas fa-smile"></i> Tranquilizar al paciente</li>
+            <li><i class="fas fa-band-aid"></i> Herida abierta → taponar</li>
+            <li><i class="fas fa-tint"></i> Salida de vísceras → cubrir (paño húmedo o suero)</li>
+            <li><i class="fas fa-bed"></i> Traslado boca arriba y piernas flexionadas</li>
+            <li><i class="fas fa-exclamation-triangle"></i> Salida de órganos → no reintroducir</li>
+            <li><i class="fas fa-exclamation-triangle"></i> Objetos clavados → fijarlos, no retirarlos</li>
+          </ol>
+        </div>
       </div>
     </div>
 
-    <div class="container" id="contusion">
-      <h2>CONTUSIÓN</h2>
-      <ul>
-        <li>
-          <h3>Síntomas</h3>
-          <ul>
-            <li>Dolor</li>
-            <li>Inflamación</li>
-            <li>Hematoma</li>
-          </ul>
-        </li>
-        <li>
-          <h3>Qué hacer:</h3>
-          <ol>
-            <li>Inmovilizar zona afectada</li>
-            <li>Elevarla</li>
-            <li>Frío</li>
-            <li>No pinchar los hematomas</li>
-            <li>Centro sanitario</li>
-          </ol>
-        </li>
-      </ul>
-    </div>
-
-    <div class="container" id="esguince">
-      <h2>ESGUINCE</h2>
-      <ul>
-        <li>
-          <h3>Síntomas</h3>
-          <ul>
-            <li>Enrojecimiento</li>
-            <li>Calor</li>
-            <li>Hinchazón</li>
-            <li>Dolor</li>
-          </ul>
-        </li>
-        <li>
-          <h3>Qué hacer:</h3>
-          <ol>
-            <li>Inmovilizar articulación (vendaje almohadillado, elástico y compresivo)</li>
-            <li>Elevar miembro afectado</li>
-            <li>Reposo</li>
-            <li>Frío (20’)</li>
-            <li>No pomadas</li>
-            <li>Centro sanitario</li>
-          </ol>
-        </li>
-      </ul>
-    </div>
-
-    <div class="container" id="luxacion">
-      <h2>LUXACIÓN</h2>
-      <ul>
-        <li>
-          <h3>Síntomas:</h3>
-          <ul>
-            <li>Dolor intenso</li>
-            <li>Hinchazón</li>
-            <li>Dificultad de movimientos</li>
-            <li>Deformación</li>
-          </ul>
-        </li>
-        <li>
-          <h3>Qué hacer:</h3>
-          <ol>
-            <li>Inmovilizar articulación (vendaje almohadillado, elástico y compresivo)</li>
-            <li>Elevar miembro y reposo</li>
-            <li>Frío local</li>
-            <li>Centro sanitario</li>
-          </ol>
-        </li>
-      </ul>
-    </div>
-
-
-
-    <div class="container" id="les_muscular">
-      <h2>LESIÓN MUSCULAR</h2>
-      <ul>
-        <li>
-          <h3>Qué hacer</h3>
-          <ol>
-            <li>Inmovilizar zona afectada (vendaje almohadillado, elástico y compresivo)</li>
-            <li>Elevar miembro y reposo</li>
-            <li>Frío local</li>
-            <li>No pomadas</li>
-            <li>Centro sanitario</li>
-          </ol>
-        </li>
-      </ul>
-    </div>
-
-
-    <div class="container" id="craneo_encef">
-      <h2>TRAUMATISMO CRÁNEO-ENCEFÁLICO</h2>
-      <ul>
-        <li>
-          <h3>Qué hacer</h3>
-          <ol>
-            <li>Valorar consciencia AVDN (Alerta, Respuesta Verbal, Responde al Dolor, No responde)</li>
-            <li>Asegurar permeabilidad de vía aérea y controlar cuello</li>
-            <li>Tumbar boca arriba (elevación cabecera 30°)</li>
-            <li>Control hemorragias</li>
-          </ol>
-        </li>
-      </ul>
-    </div>
-
-
-    <div class="container" id="espalda">
-      <h2>TRAUMATISMO DE ESPALDA</h2>
-      <ul>
-        <li>
-          <h3>Qué hacer</h3>
-          <ol>
-            <li>ABC</li>
-            <li>Control del cuello, cabeza y tronco alineados</li>
-            <li>Llamar al 112</li>
-            <li>No mover</li>
-            <li>Si está boca abajo → movilizar en bloque</li>
-          </ol>
-        </li>
-      </ul>
-    </div>
-
-
-    <div class="container" id="toracico">
-      <h2>TRAUMATISMO TORÁCICO</h2>
-      <ul>
-        <li>
-          <h3>Qué hacer</h3>
-          <ol>
-            <li>Tranquilizar al paciente</li>
-            <li>Permeabilidad vía aérea</li>
-            <li>Control hemorragias</li>
-            <li>Paciente semisentado (30-45° cabecera)</li>
-            <li>Traumatismo abierto → ocluir herida fijando solo 3 bordes (apósitos estériles)</li>
-            <li>Objetos clavados → fijarlos, no retirarlos</li>
-            <li>Centro sanitario</li>
-          </ol>
-        </li>
-      </ul>
-    </div>
-
-
-    <div class="container" id="abdominal">
-      <h2>TRAUMATISMO ABDOMINAL</h2>
-      <ul>
-        <li>
-          <h3>Qué hacer</h3>
-          <ol>
-            <li>Tranquilizar al paciente</li>
-            <li>Herida abierta → taponar</li>
-            <li>Salida de vísceras → cubrir (paño húmedo o suero)</li>
-            <li>Traslado boca arriba y piernas flexionadas</li>
-            <li>Salida de órganos → no reintroducir</li>
-            <li>Objetos clavados → fijarlos, no retirarlos</li>
-          </ol>
-        </li>
-      </ul>
-    </div>
-    <br/>
-    <br/>
-    <br/>
-    </body>
+    <script src="./javascript/jquery.js"></script>
+    <script src="./javascript/arriba.js"></script>
+  </body>
 </html>

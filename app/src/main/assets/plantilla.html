@@ -1,43 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="./css/styles.css">
-  <meta charset="utf-8" />
-  <script src="./javascript/jquery.js"></script>
-  <script src="./javascript/arriba.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
 </head>
 
 <body>
-<span class="ir-arriba glyphicon glyphicon-arrow-up"></span>
+    <div class="ir-arriba">
+        <i class="fas fa-arrow-up"></i>
+    </div>
 
-<!-- Title -->
-<div class="container">
-  <h1>TÍTULO</h1>
-</div>
+    <div class="container">
+        <h1><i class="fas fa-file"></i> TÍTULO</h1>
 
-<!-- Index -->
-<div class="container">
-  <div class="box">
-    <ul>
-      <li><a href="#id">h2title</a></li>
-    </ul>
-  </div>
-</div>
+        <nav class="nav-menu">
+            <a href="#id"><i class="fas fa-link"></i> h2title</a>
+        </nav>
 
+        <div class="card" id="id1">
+            <h2><i class="fas fa-info-circle"></i> second title</h2>
+            <p>
+                fjasldfñkjsadfj
+            </p>
+        </div>
+    </div>
 
-<!-- Content -->
-
-<div class="container" id="id1">
-  <h2>second title</h2>
-  <p>
-    fjasldfñkjsadfj
-  </p>
-</div>
-<br/>
-<br/>
-<br/>
-
+    <script src="./javascript/jquery.js"></script>
+    <script src="./javascript/arriba.js"></script>
 </body>
 </html>

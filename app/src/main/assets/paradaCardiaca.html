@@ -1,91 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="./css/styles.css">
-  <meta charset="utf-8" />
-  <script src="./javascript/jquery.js"></script>
-  <script src="./javascript/arriba.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
 </head>
 
 <body>
-<span class="ir-arriba glyphicon glyphicon-arrow-up"></span>
+    <div class="ir-arriba">
+        <i class="fas fa-arrow-up"></i>
+    </div>
 
-<!-- Title -->
-<div class="container">
-  <h1>PARADA CARDIO-RESPIRATORIA</h1>
-</div>
+    <div class="container">
+        <h1><i class="fas fa-heartbeat"></i> PARADA CARDIO-RESPIRATORIA</h1>
 
-<!-- Index -->
-<div class="container">
-  <div class="box">
-    <ul>
-      <li><a href="#id1">Qué hacer</a></li>
-      <li><a href="#id2">Desfibrilador DESA</a></li>
-    </ul>
-  </div>
-</div>
+        <nav class="nav-menu">
+            <a href="#id1"><i class="fas fa-first-aid"></i> Qué hacer</a>
+            <a href="#id2"><i class="fas fa-bolt"></i> Desfibrilador DESA</a>
+        </nav>
 
+        <div class="card" id="id1">
+            <h2><i class="fas fa-lungs"></i> Apertura de vía aérea:</h2>
+            <ul>
+                <li><i class="fas fa-hands"></i> Maniobra Frente-Mentón</li>
+                <li><i class="fas fa-hand-paper"></i> Retirar cuerpos extraños de la boca</li>
+            </ul>
 
-<!-- Content -->
+            <h2><i class="fas fa-wind"></i> Asegurar la respiración</h2>
+            <ol>
+                <li><i class="fas fa-eye"></i> Ver, oír y sentir respiración (no más de 10 seg)</li>
+                <li>
+                    <div class="warning">
+                        <i class="fas fa-exclamation-triangle"></i> NO RESPIRA:
+                        <ul>
+                            <li><i class="fas fa-child"></i> Niños menores de 8 años: 5 insuflaciones cubriendo boca y nariz / 30 compresiones torácicas con una mano / 2 insuflaciones. Continuar 30/2</li>
+                            <li><i class="fas fa-baby"></i> Lactantes < 1 año: 5 insuflaciones cubriendo boca y nariz / 30 compresiones torácicas (con 2 dedos) / 2 insuflaciones. Continuar 30/2</li>
+                            <li><i class="fas fa-user"></i> Adultos: 30 compresiones torácicas (con 2 manos) / 2 insuflaciones (30/2)</li>
+                        </ul>
+                    </div>
+                </li>
+            </ol>
 
-<div class="container" id="id1">
-  <h2>Apertura de vía aérea:</h2>
-  <ul>
-    <li>Maniobra Frente-Mentón</li>
-    <li>Retirar cuerpos extraños de la boca</li>
-  </ul>
+            <h2><i class="fas fa-clock"></i> Continuar hasta:</h2>
+            <ul>
+                <li><i class="fas fa-lungs"></i> Recuperación de la respiración</li>
+                <li><i class="fas fa-ambulance"></i> Llegada de los servicios de emergencia</li>
+                <li><i class="fas fa-battery-empty"></i> Que estemos agotados</li>
+            </ul>
+        </div>
 
-  <h2>Asegurar la respiración</h2>
-  <ol>
-    <li>Ver, oír y sentir respiración (no más de 10 seg)</li>
-    <li>
-      <p>NO RESPIRA:</p>
-      <ul>
-        <li>Niños menores de 8 años: 5 insuflaciones cubriendo boca y nariz / 30 compresiones torácicas con una mano / 2 insuflaciones. Continuar 30/2</li>
-        <li>Lactantes &lt; 1 año: 5 insuflaciones cubriendo boca y nariz / 30 compresiones torácicas (con 2 dedos) / 2 insuflaciones. Continuar 30/2</li>
-        <li>Adultos: 30 compresiones torácicas (con 2 manos) / 2 insuflaciones (30/2)</li>
-      </ul>
-    </li>
-  </ol>
+        <div class="card" id="id2">
+            <h2><i class="fas fa-bolt"></i> Desfibrilador DESA</h2>
+            <ol>
+                <li><i class="fas fa-lungs"></i> Apertura vía aérea</li>
+                <li><i class="fas fa-heartbeat"></i> RCP (30:2) hasta conectar el DESA</li>
+                <li><i class="fas fa-laptop-medical"></i> Analizar el ritmo con el DESA</li>
+                <li>
+                    <i class="fas fa-bolt"></i> Choque aconsejado:
+                    <ol>
+                        <li><i class="fas fa-power-off"></i> Apretar botón del DESA</li>
+                        <li><i class="fas fa-sync"></i> Reiniciar RCP durante 2 minutos</li>
+                    </ol>
+                </li>
+                <li>
+                    <i class="fas fa-times-circle"></i> Choque no aconsejado:
+                    <ol>
+                        <li><i class="fas fa-sync"></i> Reiniciar RCP durante 2 minutos</li>
+                        <li><i class="fas fa-lungs"></i> Continuar hasta que respire con normalidad</li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+    </div>
 
-  <h2>Continuar hasta:</h2>
-  <ul>
-    <li>Recuperación de la respiración</li>
-    <li>Llegada de los servicios de emergencia</li>
-    <li>Que estemos agotados</li>
-  </ul>
-</div>
-
-<div class="container" id="id2">
-
-  <h2>Desfibrilador DESA</h2>
-  <ol>
-    <li>Apertura vía aérea</li>
-    <li>RCP (30:2) hasta conectar el DESA</li>
-    <li>Analizar el ritmo con el DESA</li>
-    <li>
-      Choque aconsejado:
-      <ol>
-        <li>Apretar botón del DESA</li>
-        <li>Reiniciar RCP durante 2 minutos</li>
-      </ol>
-    </li>
-
-    <li>Choque no aconsejado:
-      <ol>
-        <li>Reiniciar RCP durante 2 minutos</li>
-        <li>Continuar hasta que respire con normalidad</li>
-      </ol>
-    </li>
-
-  </ol>
-</div>
-
-<br/>
-<br/>
-<br/>
-
+    <script src="./javascript/jquery.js"></script>
+    <script src="./javascript/arriba.js"></script>
 </body>
 </html>

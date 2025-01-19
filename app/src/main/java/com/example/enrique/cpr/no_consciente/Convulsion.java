@@ -1,8 +1,8 @@
 package com.example.enrique.cpr.no_consciente;
 
 import android.content.Intent;
-import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -11,16 +11,17 @@ import android.webkit.WebView;
 import com.example.enrique.cpr.MainActivity;
 import com.example.enrique.cpr.R;
 
-public class b extends AppCompatActivity {
+public class Convulsion extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.info);
-        WebView webview = (WebView) findViewById(R.id.webview_xml);
-        webview.getSettings().setJavaScriptEnabled(true);
-        webview.loadUrl("file:///android_asset/b.html");
+        WebView webView = findViewById(R.id.webview_xml);
+        webView.getSettings().setJavaScriptEnabled(true);
+        webView.loadUrl("file:///android_asset/convulsion.html");
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -31,10 +32,11 @@ public class b extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == android.R.id.home) {
-            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+            Intent intent = new Intent(this, MainActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
             finish();
+            return true;
         }
         return super.onOptionsItemSelected(item);
     }

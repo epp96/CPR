@@ -1,41 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="./css/styles.css">
-  <meta charset="utf-8" />
-  <script src="./javascript/jquery.js"></script>
-  <script src="./javascript/arriba.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
 </head>
 
 <body>
-<span class="ir-arriba glyphicon glyphicon-arrow-up"></span>
+    <div class="ir-arriba">
+        <i class="fas fa-arrow-up"></i>
+    </div>
 
-<!-- Title -->
-<div class="container">
-  <h1>PROTEGER</h1>
-</div>
+    <div class="container">
+        <h1><i class="fas fa-shield-alt"></i> PROTEGER</h1>
 
+        <div class="card" id="id1">
+            <div class="warning">
+                <i class="fas fa-exclamation-triangle"></i>
+                Evitar que el accidente sea más grave para la persona afectada y para los demás.
+                Antes de actuar es necesario asegurarnos de que nosotros mismos, las personas que nos rodean y el accidentado estamos fuera de peligro.
+            </div>
+            
+            <ul>
+                <li><i class="fas fa-child"></i> Si accidente con niños – alejar al resto de los niños del peligro</li>
+                <li><i class="fas fa-car-crash"></i> Si accidente de tráfico – chaleco de emergencias y triángulos de señalización</li>
+                <li><i class="fas fa-fire"></i> Quemadura – alejar de la fuente de calor</li>
+                <li><i class="fas fa-bolt"></i> Si descarga eléctrica – desconectar la corriente</li>
+                <li><i class="fas fa-door-closed"></i> Si accidente en lugar cerrado – asegurar salida y aire respirable</li>
+            </ul>
+        </div>
+    </div>
 
-<!-- Content -->
-
-<div class="container" id="id1">
-  <p>
-    Evitar que el accidente sea más grave para la persona afectada y para los demás.
-    Antes de actuar es necesario asegurarnos de que nosotros mismos, las personas que nos rodean y el accidentado estamos fuera de peligro.
-    <ul>
-      <li>Si accidente con niños – alejar al resto de los niños del peligro.</li>
-      <li>Si accidente de tráfico – chaleco de emergencias y triángulos de señalización</li>
-      <li>Quemadura – alejar de la fuente de calor.</li>
-      <li>Si descarga eléctrica – desconectar la corriente.</li>
-      <li>Si accidente en lugar cerrado – asegurar salida y aire respirable.</li>
-    </ul>
-  </p>
-</div>
-<br/>
-<br/>
-<br/>
-
+    <script src="./javascript/jquery.js"></script>
+    <script src="./javascript/arriba.js"></script>
 </body>
 </html>

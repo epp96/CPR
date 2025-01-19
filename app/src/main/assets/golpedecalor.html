@@ -1,61 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
-    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="./css/styles.css">
     <meta charset="utf-8" />
-    <script src="./javascript/jquery.js"></script>
-    <script src="./javascript/arriba.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
   </head>
 
-    <body>
-    <span class="ir-arriba glyphicon glyphicon-arrow-up"></span>
-
-    <div class="container">
-      <h1>GOLPE DE CALOR</h1>
+  <body>
+    <div class="ir-arriba">
+      <i class="fas fa-arrow-up"></i>
     </div>
 
-
     <div class="container">
-      <div class="box">
+      <h1><i class="fas fa-temperature-high"></i> GOLPE DE CALOR</h1>
+
+      <nav class="nav-menu">
+        <a href="#inso"><i class="fas fa-sun"></i> Insolación</a>
+        <a href="#calor"><i class="fas fa-thermometer-full"></i> Golpe de calor</a>
+        <a href="#trat"><i class="fas fa-first-aid"></i> Tratamiento</a>
+      </nav>
+
+      <div class="card" id="inso">
+        <h2><i class="fas fa-sun"></i> INSOLACIÓN</h2>
+        <div class="card">
+          <h3><i class="fas fa-exclamation-circle"></i> Causa</h3>
+          <p><i class="fas fa-clock"></i> Exposición prolongada al sol con cabeza descubierta</p>
+        </div>
+        <div class="card">
+          <h3><i class="fas fa-notes-medical"></i> Síntomas</h3>
+          <ul>
+            <li><i class="fas fa-head-side-virus"></i> Dolor de cabeza</li>
+            <li><i class="fas fa-face-flushed"></i> Cara congestionada</li>
+            <li><i class="fas fa-tint"></i> Sed intensa</li>
+            <li><i class="fas fa-hand-sparkles"></i> Piel brillante y sudorosa</li>
+            <li><i class="fas fa-dizzy"></i> Náuseas, vómitos</li>
+            <li><i class="fas fa-battery-quarter"></i> Fatiga, debilidad</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card" id="calor">
+        <h2><i class="fas fa-thermometer-full"></i> GOLPE DE CALOR</h2>
+        <div class="card">
+          <h3><i class="fas fa-exclamation-circle"></i> Causa</h3>
+          <p><i class="fas fa-temperature-high"></i> Exposición a altas temperaturas o al sol en ambiente húmedo</p>
+        </div>
+        <div class="card warning">
+          <h3><i class="fas fa-notes-medical"></i> Síntomas</h3>
+          <ul>
+            <li><i class="fas fa-hand-paper"></i> Piel caliente y seca sin sudoración</li>
+            <li><i class="fas fa-thermometer-full"></i> Fiebre alta</li>
+            <li><i class="fas fa-brain"></i> Alteración del nivel de consciencia</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card important" id="trat">
+        <h2><i class="fas fa-first-aid"></i> TRATAMIENTO</h2>
         <ul>
-          <li><a href="#inso">Insolación</a></li>
-          <li><a href="#calor">Golpe de calor</a></li>
-          <li><a href="#trat">Tratamiento</a></li>
+          <li><i class="fas fa-wind"></i> Retirar a la víctima a LUGAR FRESCO Y VENTILADO SEMISENTADA</li>
+          <li><i class="fas fa-tshirt"></i> Aflojar ropa</li>
+          <li><i class="fas fa-snowflake"></i> Paños húmedos fríos en frente, nuca, axilas e ingles</li>
+          <li><i class="fas fa-glass-water"></i> Administrar sorbos de agua y líquidos isotónicos fríos si está consciente</li>
+          <li><i class="fas fa-phone"></i> Avisar 112</li>
         </ul>
       </div>
     </div>
 
-
-    <div class="container" id="inso">
-      <h2>INSOLACIÓN</h2>
-      <ul>
-        <li>Exposición prolongada al sol con cabeza descubierta</li>
-        <li>Síntomas: Dolor de cabeza, cara congestionada, sed intensa, piel brillante y sudorosa, náuseas, vómitos, fatiga, debilidad</li>
-      </ul>
-    </div>
-
-    <div class="container" id="calor">
-      <h2>GOLPE DE CALOR</h2>
-      <ul>
-        <li>Exposición a altas temperaturas o al sol en ambiente húmedo</li>
-        <li>Síntomas: Piel caliente y seca sin sudoración, fiebre alta, alteración del nivel de consciencia</li>
-      </ul>
-    </div>
-
-    <div class="container" id="trat">
-      <h2>TRATAMIENTO</h2>
-      <ul>
-        <li>Retirar a la víctima a LUGAR FRESCO Y VENTILADO SEMISENTADA</li>
-        <li>Aflojar ropa</li>
-        <li>Paños húmedos fríos en frente, nuca, axilas e ingles</li>
-        <li>Administrar sorbos de agua y líquidos isotónicos fríos si está consciente</li>
-        <li>Avisar 112</li>
-      </ul>
-    </div>
-    </body>
-    <br/>
-    <br/>
-    <br/>
+    <script src="./javascript/jquery.js"></script>
+    <script src="./javascript/arriba.js"></script>
+  </body>
 </html>

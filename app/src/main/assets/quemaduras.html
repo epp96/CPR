@@ -1,74 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
-    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="./css/styles.css">
     <meta charset="utf-8" />
-    <script src="./javascript/jquery.js"></script>
-    <script src="./javascript/arriba.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
   </head>
 
-    <body>
-    <span class="ir-arriba glyphicon glyphicon-arrow-up"></span>
-
-    <div class="container">
-      <h1>QUEMADURAS</h1>
+  <body>
+    <div class="ir-arriba">
+      <i class="fas fa-arrow-up"></i>
     </div>
 
-
     <div class="container">
-      <div class="box">
+      <h1><i class="fas fa-fire"></i> QUEMADURAS</h1>
+
+      <nav class="nav-menu">
+        <a href="#leve"><i class="fas fa-band-aid"></i> Quemadura leve</a>
+        <a href="#grave"><i class="fas fa-hospital"></i> Quemadura grave</a>
+        <a href="#quimica"><i class="fas fa-flask"></i> Quemadura química</a>
+        <a href="#importante"><i class="fas fa-exclamation-triangle"></i> Qué no hacer</a>
+      </nav>
+
+      <div class="card" id="leve">
+        <h2>Quemadura Leve</h2>
+        <h3>Qué hacer:</h3>
         <ul>
-          <li><a href="#leve">Quemadura leve</a></li>
-          <li><a href="#grave">Quemadura extensa o grave</a></li>
-          <li><a href="#quimica">Quemadura por agente químico</a></li>
-          <li><a href="#importante">Qué no hacer</a></li>
+          <li><i class="fas fa-tint"></i> Enfriar la quemadura con agua corriente 10 minutos</li>
+          <li><i class="fas fa-ring"></i> Retirar anillos, relojes, pulseras…</li>
+          <li><i class="fas fa-ban"></i> No romper ampollas</li>
+          <li><i class="fas fa-prescription-bottle-alt"></i> Aplicar crema cicatrizante</li>
+          <li><i class="fas fa-first-aid"></i> Cubrir con apósitos estériles (si es posible) o muy limpios</li>
         </ul>
       </div>
-    </div>
 
+      <div class="card" id="grave">
+        <h2>Quemadura Extensa o Grave</h2>
+        <h3>Qué hacer:</h3>
+        <ul>
+          <li><i class="fas fa-running"></i> Alejar a la víctima de la fuente calorífica agresora</li>
+          <li><i class="fas fa-heartbeat"></i> ABC</li>
+          <li><i class="fas fa-tint"></i> Enfriar la zona quemada inmediatamente con agua corriente 10 minutos o aplicar paños empapados</li>
+          <li><i class="fas fa-blanket"></i> Cubrir al paciente con una sábana como aislamiento, si es posible, con un paño metálico isotérmico o manta térmica para prevenir la hipotermia</li>
+          <li><i class="fas fa-arrow-up"></i> Elevar el miembro</li>
+          <li><i class="fas fa-ring"></i> Retirar anillos, relojes, pulseras…</li>
+        </ul>
+      </div>
 
-    <div class="container" id="leve">
-      <h2>QUEMADURA LEVE</h2>
-      <h3>Qué hacer:</h3>
-      <ul>
-        <li>Enfriar la quemadura con agua corriente 10 minutos</li>
-        <li>Retirar anillos, relojes, pulseras…</li>
-        <li>No romper ampollas</li>
-        <li>Aplicar crema cicatrizante</li>
-        <li>Cubrir con apósitos estériles (si es posible) o muy limpios</li>
-      </ul>
-    </div>
+      <div class="card" id="quimica">
+        <h2>Quemadura por Agente Químico</h2>
+        <h3>Qué hacer:</h3>
+        <ul>
+          <li><i class="fas fa-shower"></i> Lavar y arrastrar el cáustico con agua durante 15-20 minutos</li>
+          <li><i class="fas fa-first-aid"></i> Cubrir con apósitos estériles (si es posible) o muy limpios</li>
+          <li><i class="fas fa-ring"></i> Retirar anillos, relojes, pulseras…</li>
+          <li><i class="fas fa-eye"></i> Si salpicadura a los ojos, acudir a centro hospitalario</li>
+          <li><i class="fas fa-eye-slash"></i> Si solo se ha afectado un ojo, cuidar que el agua residual de lavado no entre en contacto con el ojo sano</li>
+        </ul>
+      </div>
 
-    <div class="container" id="grave">
-      <h2>QUEMADURA EXTENSA O GRAVE</h2>
-      <h3>Qué hacer:</h3>
-      <ul>
-        <li>Alejar a la víctima de la fuente calorífica agresora</li>
-        <li>ABC</li>
-        <li>Enfriar la zona quemada inmediatamente con agua corriente 10 minutos o aplicar paños empapados</li>
-        <li>Cubrir al paciente con una sábana como aislamiento, si es posible, con un paño metálico isotérmico o manta térmica para prevenir la hipotermia</li>
-        <li>Elevar el miembro</li>
-        <li>Retirar anillos, relojes, pulseras…</li>
-      </ul>
-    </div>
-
-    <div class="container" id="quimica">
-      <h2>QUEMADURA POR AGENTE QUÍMICO</h2>
-      <h3>Qué hacer:</h3>
-      <ul>
-        <li>Lavar y arrastrar el cáustico con agua durante 15-20 minutos</li>
-        <li>Cubrir con apósitos estériles (si es posible) o muy limpios</li>
-        <li>Retirar anillos, relojes, pulseras…</li>
-        <li>Si salpicadura a los ojos, acudir a centro hospitalario</li>
-        <li>Si solo se ha afectado un ojo, cuidar que el agua residual de lavado no entre en contacto con el ojo sano</li>
-      </ul>
-    </div>
-
-    <div class="container" id="importante">
-      <div class="box">
-        <h1>IMPORTANTE</h1>
+      <div class="card important" id="importante">
+        <h2><i class="fas fa-exclamation-triangle"></i> IMPORTANTE</h2>
         <ul>
           <li>NO aplicar remedios caseros tipo pomadas, lociones o ungüentos, pasta de dientes, aceite o vinagre</li>
           <li>NO utilizar algodón o apósitos adhesivos</li>
@@ -80,9 +73,8 @@
         </ul>
       </div>
     </div>
-    <br/>
-    <br/>
-    <br/>
 
-    </body>
+    <script src="./javascript/jquery.js"></script>
+    <script src="./javascript/arriba.js"></script>
+  </body>
 </html>

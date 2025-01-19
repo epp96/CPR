@@ -1,47 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
-    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="./css/styles.css">
     <meta charset="utf-8" />
-    <script src="./javascript/jquery.js"></script>
-    <script src="./javascript/arriba.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
   </head>
 
-    <body>
-    <span class="ir-arriba glyphicon glyphicon-arrow-up"></span>
-
-    <div class="container">
-      <h1>FRACTURAS</h1>
+  <body>
+    <div class="ir-arriba">
+      <i class="fas fa-arrow-up"></i>
     </div>
 
     <div class="container">
-      <h2>Síntomas</h2>
-      <ul>
-        <li>Chasquido</li>
-        <li>Dolor</li>
-        <li>Hinchazón</li>
-        <li>Deformidad</li>
-        <li>Hematoma</li>
-        <li>Impotencia funcional</li>
-      </ul>
+      <h1><i class="fas fa-bone"></i> FRACTURAS</h1>
+
+      <div class="card">
+        <h2><i class="fas fa-clipboard-list"></i> Síntomas</h2>
+        <ul>
+          <li><i class="fas fa-volume-up"></i> Chasquido</li>
+          <li><i class="fas fa-bolt"></i> Dolor</li>
+          <li><i class="fas fa-expand"></i> Hinchazón</li>
+          <li><i class="fas fa-bone"></i> Deformidad</li>
+          <li><i class="fas fa-tint"></i> Hematoma</li>
+          <li><i class="fas fa-hand-paper"></i> Impotencia funcional</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2><i class="fas fa-first-aid"></i> Qué hacer</h2>
+        <ul>
+          <li><i class="fas fa-hand-paper"></i> No movilizar</li>
+          <li><i class="fas fa-ring"></i> Retirar anillos, relojes y pulseras</li>
+          <li><i class="fas fa-search"></i> Explorar movilidad y sensibilidad</li>
+          <li><i class="fas fa-bandage"></i> Inmovilizar parte fracturada (sin forzar)</li>
+          <li><i class="fas fa-hospital"></i> Centro sanitario</li>
+          <li>
+            <div class="warning">
+              <i class="fas fa-exclamation-triangle"></i>
+              Fractura abierta → cubrir (apósitos) y parar hemorragia
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <div class="container">
-      <h2>Qué hacer:</h2>
-      <ul>
-        <li>No movilizar</li>
-        <li>Retirar anillos, relojes y pulseras</li>
-        <li>Explorar movilidad y sensibilidad</li>
-        <li>Inmovilizar parte fracturada (sin forzar)</li>
-        <li>Centro sanitario</li>
-        <li>Fractura abierta → cubrir (apósitos) y parar hemorragia</li>
-      </ul>
-    </div>
-    <br/>
-    <br/>
-    <br/>
-
-    </body>
+    <script src="./javascript/jquery.js"></script>
+    <script src="./javascript/arriba.js"></script>
+  </body>
 </html>

@@ -1,106 +1,110 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+<html lang="es">
+<head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+</head>
+
+<body>
+    <div class="ir-arriba">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <div class="container">
+        <h1><i class="fas fa-tint"></i> HEMORRAGIAS</h1>
+
+        <nav class="nav-menu">
+            <a href="#corte"><i class="fas fa-cut"></i> Corte</a>
+            <a href="#interna"><i class="fas fa-user-injured"></i> Hemorragia interna</a>
+            <a href="#externa"><i class="fas fa-tint"></i> Hemorragia externa</a>
+        </nav>
+
+        <div class="card" id="corte">
+            <h2><i class="fas fa-cut"></i> CORTE</h2>
+            <ol>
+                <li><i class="fas fa-clipboard-check"></i> PAS</li>
+                <li><i class="fas fa-phone"></i> Si es muy profundo o grande valorar si aviso a 112 + ABC</li>
+                <li><i class="fas fa-hands-wash"></i> Ponerse guantes y presionar la herida con gasas limpias</li>
+                <li><i class="fas fa-plus"></i> Si no cede añadir más gasas sin retirar las anteriores</li>
+                <li><i class="fas fa-arrow-up"></i> Elevar el miembro afectado (si no hay fractura)</li>
+                <li><i class="fas fa-hand-paper"></i> Compresión arterial si el sangrado no cede</li>
+                <li><i class="fas fa-bandage"></i> Aplicar vendaje compresivo</li>
+                <li>
+                    <div class="warning">
+                        <i class="fas fa-exclamation-triangle"></i> Si hay objeto clavado NO RETIRAR, sujetar con vendaje
+                    </div>
+                </li>
+            </ol>
+        </div>
+
+        <div class="card" id="interna">
+            <h2><i class="fas fa-user-injured"></i> HEMORRAGIA INTERNA</h2>
+            <ol>
+                <li><i class="fas fa-phone"></i> 112</li>
+                <li><i class="fas fa-smile"></i> Tranquilizar al paciente</li>
+                <li><i class="fas fa-heartbeat"></i> Control de signos vitales</li>
+                <li><i class="fas fa-bed"></i> Acostar al paciente boca arriba</li>
+                <li><i class="fas fa-tshirt"></i> Aflojar la ropa</li>
+                <li><i class="fas fa-temperature-low"></i> Arropar al paciente</li>
+            </ol>
+        </div>
+
+        <div class="card" id="externa">
+            <h2><i class="fas fa-tint"></i> HEMORRAGIA EXTERNA</h2>
+            
+            <div class="card">
+                <h3><i class="fas fa-head-side"></i> Nariz</h3>
+                <ol>
+                    <li><i class="fas fa-male"></i> Mantener erguido</li>
+                    <li><i class="fas fa-hand-paper"></i> Comprimir fosa nasal (al menos 5 minutos)</li>
+                    <li><i class="fas fa-band-aid"></i> Taponar</li>
+                    <li><i class="fas fa-phone"></i> Si no cede, 112</li>
+                    <li>
+                        <div class="warning">
+                            <i class="fas fa-exclamation-triangle"></i> Nunca echar la cabeza hacia atrás
+                        </div>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="card">
+                <h3><i class="fas fa-tooth"></i> Boca</h3>
+                <ol>
+                    <li><i class="fas fa-phone"></i> 112</li>
+                    <li><i class="fas fa-chair"></i> Paciente semisentado con la cabeza elevada</li>
+                    <li><i class="fas fa-heartbeat"></i> Vigilar constantes</li>
+                    <li><i class="fas fa-temperature-low"></i> Abrigar al paciente</li>
+                    <li><i class="fas fa-utensils"></i> Ayuno total</li>
+                </ol>
+            </div>
+
+            <div class="card">
+                <h3><i class="fas fa-deaf"></i> Oído</h3>
+                
+                <div class="card">
+                    <h4><i class="fas fa-user-injured"></i> Sangrado interno tras traumatismo</h4>
+                    <ol>
+                        <li><i class="fas fa-phone"></i> 112</li>
+                        <li><i class="fas fa-hand-paper"></i> No movilizar</li>
+                    </ol>
+                </div>
+
+                <div class="card">
+                    <h4><i class="fas fa-tint"></i> Sangrado externo</h4>
+                    <ol>
+                        <li><i class="fas fa-band-aid"></i> Cubrir</li>
+                        <li><i class="fas fa-head-side"></i> Inclinar la cabeza hacia ese lado</li>
+                        <li><i class="fas fa-hospital"></i> Acudir centro sanitario</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="./javascript/jquery.js"></script>
     <script src="./javascript/arriba.js"></script>
-  </head>
-
-    <body>
-    <span class="ir-arriba glyphicon glyphicon-arrow-up"></span>
-
-    <div class="container">
-      <h1>HEMORRAGIAS</h1>
-    </div>
-
-
-    <div class="container">
-      <div class="box">
-        <ul>
-          <li><a href="#corte">Corte</a></li>
-          <li><a href="#interna">Hemorragia interna</a></li>
-          <li><a href="#externa">Hemorragia externa</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="container" id="corte">
-      <h2>CORTE</h2>
-      <ul>
-        <li>PAS</li>
-        <li>Si es muy profundo o grande valorar si aviso a 112 + ABC</li>
-        <li>Ponerse guantes y presionar la herida con gasas limpias</li>
-        <li>Si no cede añadir más gasas sin retirar las anteriores</li>
-        <li>Elevar el miembro afectado (si no hay fractura)</li>
-        <li>Compresión arterial si el sangrado no cede</li>
-        <li>Aplicar vendaje compresivo</li>
-        <li>Si hay objeto clavado NO RETIRAR, sujetar con vendaje</li>
-      </ul>
-    </div>
-
-    <div class="container" id="interna">
-      <h2>HEMORRAGIA INTERNA</h2>
-      <ul>
-        <li>112</li>
-        <li>Tranquilizar al paciente</li>
-        <li>Control de signos vitales</li>
-        <li>Acostar al paciente boca arriba</li>
-        <li>Aflojar la ropa</li>
-        <li>Arropar al paciente</li>
-      </ul>
-    </div>
-
-    <div class="container" id="externa">
-      <h2>HEMORRAGIA EXTERNA</h2>
-      <ul>
-        <li>
-          <h3>Nariz</h3>
-          <ul>
-            <li>Mantener erguido</li>
-            <li>Comprimir fosa nasal (al menos 5 minutos)</li>
-            <li>Taponar</li>
-            <li>Si no cede, 112</li>
-            <li>Nunca echar la cabeza hacia atrás</li>
-          </ul>
-        </li>
-        <li>
-          <h3>Boca</h3>
-          <ul>
-            <li>112</li>
-            <li>Paciente semisentado con la cabeza elevada</li>
-            <li>Vigilar constantes</li>
-            <li>Abrigar al paciente</li>
-            <li>Ayuno total</li>
-          </ul>
-        </li>
-        <li>
-          <h3>Oído</h3>
-          <ul>
-            <li>
-              <h5>Sangrado interno tras traumatismo</h5>
-                <ul>
-                  <li>112</li>
-                  <li>No movilizar</li>
-                </ul>
-            </li>
-            <li>
-              <h5>Sangrado externo</h5>
-              <ul>
-                <li>Cubrir</li>
-                <li>Inclinar la cabeza hacia ese lado</li>
-                <li>Acudir centro sanitario</li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-    <br/>
-    <br/>
-    <br/>
-
-    </body>
+</body>
 </html>

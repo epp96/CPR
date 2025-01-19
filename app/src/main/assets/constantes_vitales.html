@@ -1,106 +1,109 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="./css/styles.css">
-  <meta charset="utf-8" />
-  <script src="./javascript/jquery.js"></script>
-  <script src="./javascript/arriba.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
 </head>
 
 <body>
-<span class="ir-arriba glyphicon glyphicon-arrow-up"></span>
+    <div class="ir-arriba">
+        <i class="fas fa-arrow-up"></i>
+    </div>
 
-<!-- Title -->
-<div class="container">
-  <h1>CONSTANTES VITALES</h1>
-</div>
+    <div class="container">
+        <h1><i class="fas fa-heartbeat"></i> CONSTANTES VITALES</h1>
 
-<!-- Index -->
-<div class="container">
-  <div class="box">
-    <ul>
-      <li><a href="#resp">Respiración</a></li>
-      <li><a href="#pulso">Pulso</a></li>
-      <li><a href="#temp">Temperatura</a></li>
-      <li><a href="#tension">Tensión</a></li>
-    </ul>
-  </div>
-</div>
+        <nav class="nav-menu">
+            <a href="#resp"><i class="fas fa-lungs"></i> Respiración</a>
+            <a href="#pulso"><i class="fas fa-heart"></i> Pulso</a>
+            <a href="#temp"><i class="fas fa-thermometer-half"></i> Temperatura</a>
+            <a href="#tension"><i class="fas fa-stethoscope"></i> Tensión</a>
+        </nav>
 
+        <div class="card" id="resp">
+            <h2><i class="fas fa-lungs"></i> RESPIRACIÓN</h2>
+            <div class="card">
+                <h3><i class="fas fa-clock"></i> Frecuencia respiratoria</h3>
+                <ul>
+                    <li><i class="fas fa-baby"></i> Recién nacido: 30-40 rpm</li>
+                    <li><i class="fas fa-baby-carriage"></i> Lactante: 26-30 rpm</li>
+                    <li><i class="fas fa-child"></i> Niño 6 a 12 años: 20-12 rpm (disminuyendo con el crecimiento)</li>
+                    <li><i class="fas fa-user"></i> Adulto: 12-18 rpm</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3><i class="fas fa-sync"></i> Ritmo</h3>
+                <p>En condiciones normales no hay pausas</p>
+            </div>
+            <div class="card">
+                <h3><i class="fas fa-arrows-alt-v"></i> Profundidad</h3>
+                <p>Unos 500 cm<sup>3</sup></p>
+            </div>
+        </div>
 
+        <div class="card" id="pulso">
+            <h2><i class="fas fa-heart"></i> PULSO</h2>
+            <div class="card">
+                <h3><i class="fas fa-clock"></i> Frecuencia cardiaca</h3>
+                <ul>
+                    <li><i class="fas fa-baby"></i> Bebés: 130-140 ppm</li>
+                    <li><i class="fas fa-child"></i> Niños: 80 a 100 ppm</li>
+                    <li><i class="fas fa-user"></i> Adultos: 60 a 100 ppm</li>
+                    <li><i class="fas fa-user-plus"></i> Ancianos: 60 ppm o menos</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3><i class="fas fa-sync"></i> Ritmo</h3>
+                <p>Homogéneo</p>
+            </div>
+            <div class="card">
+                <h3><i class="fas fa-compress-arrows-alt"></i> Tensión</h3>
+                <p>Lleno y palpitante</p>
+            </div>
+        </div>
 
-<!-- Content -->
+        <div class="card" id="temp">
+            <h2><i class="fas fa-thermometer-half"></i> TEMPERATURA</h2>
+            <div class="card">
+                <h3><i class="fas fa-temperature-high"></i> Fiebre o hipertermia</h3>
+                <ul>
+                    <li><i class="fas fa-thermometer-quarter"></i> Febrícula: 37,1 a 37,9 ºC</li>
+                    <li><i class="fas fa-thermometer-half"></i> Fiebre: 38 ºC</li>
+                    <li><i class="fas fa-thermometer-three-quarters"></i> Fiebre alta: 39,5 a 40,4 ºC</li>
+                    <li><i class="fas fa-thermometer-full"></i> Fiebre muy alta: más de 40,5 ºC</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3><i class="fas fa-temperature-low"></i> Hipotermia</h3>
+                <p>Temperatura por debajo de 35,5 ºC</p>
+            </div>
+        </div>
 
-<div class="container" id="resp">
-  <h2>RESPIRACIÓN</h2>
-  <ul>
-    <li>
-      Frecuencia respiratoria.
-      <ul>
-        <li>Recién nacido: 30-40 rpm.</li>
-        <li>Lactante: 26-30 rpm.</li>
-        <li>Niño 6 a 12 años: 20-12 rpm disminuyendo con el crecimiento.</li>
-        <li>Adulto: 12-18 rpm</li>
-      </ul>
-    </li>
-    <li>Ritmo. En condiciones normales no hay pausas</li>
-    <li>Profundidad. Unos 500 cm<sup>3</sup></li>
-  </ul>
-</div>
+        <div class="card" id="tension">
+            <h2><i class="fas fa-stethoscope"></i> TENSIÓN</h2>
+            <div class="card">
+                <h3><i class="fas fa-heart"></i> Tensión sistólica normal</h3>
+                <ul>
+                    <li><i class="fas fa-baby"></i> Bebés: 50-80 mmHg</li>
+                    <li><i class="fas fa-child"></i> Niños: 80-100 mmHg</li>
+                    <li><i class="fas fa-user"></i> Adultos: 120/80 ±10 mmHg</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3><i class="fas fa-arrow-up"></i> Hipertensión</h3>
+                <p>>140 (sistólica) y >90 (diastólica)</p>
+            </div>
+            <div class="card">
+                <h3><i class="fas fa-arrow-down"></i> Hipotensión</h3>
+                <p><100 (sistólica) y <50 (diastólica)</p>
+            </div>
+        </div>
+    </div>
 
-<div class="container" id="pulso">
-  <h2>PULSO</h2>
-  <ul>
-    <li>
-      Frecuencia cardiaca.
-      <ul>
-        <li>Bebés: 130-140 ppm. </li>
-        <li>Niños: 80 a 100 ppm. </li>
-        <li>Adultos: 60 a 100 ppm. </li>
-        <li>Ancianos: 60 ppm o menos.</li>
-      </ul>
-    </li>
-    <li>Ritmo. Homogéneo.</li>
-    <li>Tensión. Lleno y palpitante. </li>
-  </ul>
-</div>
-
-<div class="container" id="temp">
-  <h2>TEMPERATURA</h2>
-  <ul>
-    <li>
-      Fiebre o hipertermia.
-      <ul>
-        <li>Febrícula: 37,1 a 37,9 ºC. </li>
-        <li>Fiebre 38 ºC. </li>
-        <li>Fiebre alta: 39,5 a 40,4 ºC. </li>
-        <li>Fiebre muy alta: más de 40,5 ºC.</li>
-      </ul>
-    </li>
-    <li>Hipotermia: Temperatura por debajo de 35,5 ºC</li>
-  </ul>
-</div>
-
-<div class="container" id="tension">
-  <h2>TENSIÓN</h2>
-  <ul>
-    <li>
-      Tensión sistólica normal.
-      <ul>
-        <li>Bebés: 50-80 mmHg. </li>
-        <li>Niños: 80-100 mmHg. </li>
-        <li>Adultos: 120/80 +/- 10mmHg</li>
-      </ul>
-    </li>
-    <li>Hipertensión: >140 (sistólica) y >90 (diastólica)</li>
-    <li>Hipotensión: &#60;100 (sistólica) y &#60;50 (diastólica)</li>
-  </ul>
-</div>
-<br/>
-<br/>
-<br/>
-
+    <script src="./javascript/jquery.js"></script>
+    <script src="./javascript/arriba.js"></script>
 </body>
 </html>
