@@ -1,154 +1,137 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    android:padding="16dp"
     tools:context="com.example.enrique.cpr.consciente.consciente">
-    <LinearLayout
+
+    <Button
+        android:id="@+id/golpecalor"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0px"
-            android:layout_weight="12"
-            android:orientation="vertical">
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/card_background"
+        android:elevation="4dp"
+        android:fontFamily="@font/Roboto-Medium"
+        android:text="@string/golped"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp" />
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="0px"
-                android:layout_weight="1"
-                android:background="@drawable/custom_button5"
-                android:textAllCaps="false"
-                android:textSize="22sp"
-                android:layout_marginBottom="5sp"
-                android:layout_marginLeft="5sp"
-                android:layout_marginRight="5sp"
-                android:layout_marginTop="5sp"
-                android:textColor="@color/colorPrimary"
-                android:text="@string/golped"
-                android:id="@+id/golpecalor"/>
+    <Button
+        android:id="@+id/fuego"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginVertical="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/card_background"
+        android:elevation="4dp"
+        android:fontFamily="@font/Roboto-Medium"
+        android:text="@string/fuego"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp" />
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="0px"
-                android:layout_weight="1"
-                android:background="@drawable/custom_button5"
-                android:textAllCaps="false"
-                android:textSize="22sp"
-                android:layout_marginBottom="5sp"
-                android:layout_marginLeft="5sp"
-                android:layout_marginRight="5sp"
-                android:layout_marginTop="5sp"
-                android:textColor="@color/colorPrimary"
-                android:text="@string/fuego"
-                android:id="@+id/fuego"/>
+    <Button
+        android:id="@+id/atraga"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginVertical="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/card_background"
+        android:elevation="4dp"
+        android:fontFamily="@font/Roboto-Medium"
+        android:text="@string/atragar"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp" />
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="0px"
-                android:layout_weight="1"
-                android:background="@drawable/custom_button5"
-                android:textAllCaps="false"
-                android:textSize="22sp"
-                android:layout_marginBottom="5sp"
-                android:layout_marginLeft="5sp"
-                android:layout_marginRight="5sp"
-                android:layout_marginTop="5sp"
-                android:textColor="@color/colorPrimary"
-                android:text="@string/atragar"
-                android:id="@+id/atraga"/>
+    <Button
+        android:id="@+id/hemo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginVertical="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/card_background"
+        android:elevation="4dp"
+        android:fontFamily="@font/Roboto-Medium"
+        android:text="@string/hemo"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp" />
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="0px"
-                android:background="@drawable/custom_button5"
-                android:textAllCaps="false"
-                android:textSize="22sp"
-                android:layout_marginBottom="5sp"
-                android:layout_marginLeft="5sp"
-                android:layout_marginRight="5sp"
-                android:layout_marginTop="5sp"
-                android:textColor="@color/colorPrimary"
-                android:layout_weight="1"
-                android:text="@string/hemo"
-                android:id="@+id/hemo" />
+    <Button
+        android:id="@+id/herida"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginVertical="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/card_background"
+        android:elevation="4dp"
+        android:fontFamily="@font/Roboto-Medium"
+        android:text="@string/herida"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp" />
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="0px"
-                android:background="@drawable/custom_button5"
-                android:textAllCaps="false"
-                android:textSize="22sp"
-                android:layout_marginBottom="5sp"
-                android:layout_marginLeft="5sp"
-                android:layout_marginRight="5sp"
-                android:layout_marginTop="5sp"
-                android:textColor="@color/colorPrimary"
-                android:layout_weight="1"
-                android:text="@string/herida"
-                android:id="@+id/herida"/>
+    <Button
+        android:id="@+id/veneno"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginVertical="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/card_background"
+        android:elevation="4dp"
+        android:fontFamily="@font/Roboto-Medium"
+        android:text="@string/veneno"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp" />
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="0px"
-                android:layout_weight="1"
-                android:background="@drawable/custom_button5"
-                android:textAllCaps="false"
-                android:textSize="22sp"
-                android:layout_marginBottom="5sp"
-                android:layout_marginLeft="5sp"
-                android:layout_marginRight="5sp"
-                android:layout_marginTop="5sp"
-                android:textColor="@color/colorPrimary"
-                android:text="@string/veneno"
-                android:id="@+id/veneno"/>
+    <Button
+        android:id="@+id/fractura"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginVertical="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/card_background"
+        android:elevation="4dp"
+        android:fontFamily="@font/Roboto-Medium"
+        android:text="@string/fractura"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp" />
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="0px"
-                android:layout_weight="1"
-                android:text="@string/fractura"
-                android:background="@drawable/custom_button5"
-                android:textAllCaps="false"
-                android:textSize="22sp"
-                android:layout_marginBottom="5sp"
-                android:layout_marginLeft="5sp"
-                android:layout_marginRight="5sp"
-                android:layout_marginTop="5sp"
-                android:textColor="@color/colorPrimary"
-                android:id="@+id/fractura"/>
+    <Button
+        android:id="@+id/rayo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginVertical="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/card_background"
+        android:elevation="4dp"
+        android:fontFamily="@font/Roboto-Medium"
+        android:text="@string/rayo"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp" />
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="0px"
-                android:layout_weight="1"
-                android:background="@drawable/custom_button5"
-                android:textAllCaps="false"
-                android:textSize="22sp"
-                android:layout_marginBottom="5sp"
-                android:layout_marginLeft="5sp"
-                android:layout_marginRight="5sp"
-                android:layout_marginTop="5sp"
-                android:textColor="@color/colorPrimary"
-                android:text="@string/rayo"
-                android:id="@+id/rayo"/>
+    <Button
+        android:id="@+id/golpes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/card_background"
+        android:elevation="4dp"
+        android:fontFamily="@font/Roboto-Medium"
+        android:text="@string/golpes"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp" />
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="0px"
-                android:background="@drawable/custom_button5"
-                android:textAllCaps="false"
-                android:textSize="22sp"
-                android:layout_marginBottom="5sp"
-                android:layout_marginLeft="5sp"
-                android:layout_marginRight="5sp"
-                android:layout_marginTop="5sp"
-                android:textColor="@color/colorPrimary"
-                android:layout_weight="1"
-                android:text="@string/golpes"
-                android:id="@+id/golpes"/>
-        </LinearLayout>
-    </LinearLayout>
 </LinearLayout>
