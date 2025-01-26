@@ -209,20 +209,6 @@ li {
   text-align: justify;
 }
 
-.ir-arriba {
-  z-index: 5000;
-  padding: 20px;
-  border-radius: 90px;
-  background: #e88a05;
-  font-size: 15px;
-  color: white;
-  cursor: pointer;
-  position: fixed;
-  top: auto;
-  bottom: 15px;
-  right: 15px;
-}
-
 /*  Container  */
 .container {
   margin-left: auto;

@@ -28,7 +28,7 @@
                 android:textAllCaps="false"
                 android:textSize="22sp"
                 android:layout_marginBottom="8dp"
-                android:fontFamily="@font/Roboto-Medium"
+                android:fontFamily="@font/roboto_medium"
                 android:textColor="@color/colorPrimary"
                 android:elevation="4dp"
                 android:text="A"/>
@@ -42,7 +42,7 @@
                 android:textAllCaps="false"
                 android:textSize="22sp"
                 android:layout_marginBottom="8dp"
-                android:fontFamily="@font/Roboto-Medium"
+                android:fontFamily="@font/roboto_medium"
                 android:textColor="@color/colorPrimary"
                 android:elevation="4dp"
                 android:text="B" />
@@ -56,7 +56,7 @@
                 android:textAllCaps="false"
                 android:textSize="22sp"
                 android:layout_marginBottom="8dp"
-                android:fontFamily="@font/Roboto-Medium"
+                android:fontFamily="@font/roboto_medium"
                 android:textColor="@color/colorPrimary"
                 android:elevation="4dp"
                 android:text="C" />
@@ -70,7 +70,7 @@
                 android:textAllCaps="false"
                 android:textSize="22sp"
                 android:layout_marginBottom="8dp"
-                android:fontFamily="@font/Roboto-Medium"
+                android:fontFamily="@font/roboto_medium"
                 android:textColor="@color/colorPrimary"
                 android:elevation="4dp"
                 android:text="@string/paradaC" />
@@ -84,7 +84,7 @@
                 android:textAllCaps="false"
                 android:textSize="22sp"
                 android:layout_marginBottom="8dp"
-                android:fontFamily="@font/Roboto-Medium"
+                android:fontFamily="@font/roboto_medium"
                 android:textColor="@color/colorPrimary"
                 android:elevation="4dp"
                 android:text="@string/atragar"/>
@@ -98,7 +98,7 @@
                 android:textAllCaps="false"
                 android:textSize="22sp"
                 android:layout_marginBottom="8dp"
-                android:fontFamily="@font/Roboto-Medium"
+                android:fontFamily="@font/roboto_medium"
                 android:textColor="@color/colorPrimary"
                 android:elevation="4dp"
                 android:text="@string/convulsion" />
@@ -112,7 +112,7 @@
                 android:textAllCaps="false"
                 android:textSize="22sp"
                 android:layout_marginBottom="8dp"
-                android:fontFamily="@font/Roboto-Medium"
+                android:fontFamily="@font/roboto_medium"
                 android:textColor="@color/colorPrimary"
                 android:elevation="4dp"
                 android:text="@string/desmayo" />
@@ -126,7 +126,7 @@
                 android:textAllCaps="false"
                 android:textSize="22sp"
                 android:layout_marginBottom="8dp"
-                android:fontFamily="@font/Roboto-Medium"
+                android:fontFamily="@font/roboto_medium"
                 android:textColor="@color/colorPrimary"
                 android:elevation="4dp"
                 android:text="@string/coma"/>
@@ -140,7 +140,7 @@
                 android:textAllCaps="false"
                 android:textSize="22sp"
                 android:layout_marginBottom="8dp"
-                android:fontFamily="@font/Roboto-Medium"
+                android:fontFamily="@font/roboto_medium"
                 android:textColor="@color/colorPrimary"
                 android:elevation="4dp"
                 android:text="@string/trauma" />

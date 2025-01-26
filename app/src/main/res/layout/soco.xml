@@ -17,7 +17,7 @@
         android:background="@drawable/card_background"
         android:textColor="@color/colorPrimary"
         android:textAllCaps="false"
-        android:fontFamily="@font/Roboto-Medium"
+        android:fontFamily="@font/roboto_medium"
         android:elevation="4dp"
         android:id="@+id/cons"
         android:text="@string/cons"/>
@@ -31,7 +31,7 @@
         android:background="@drawable/card_background"
         android:textAllCaps="false"
         android:textColor="@color/colorPrimary"
-        android:fontFamily="@font/Roboto-Medium"
+        android:fontFamily="@font/roboto_medium"
         android:elevation="4dp"
         android:id="@+id/nocons"
         android:text="@string/nocons"/>
